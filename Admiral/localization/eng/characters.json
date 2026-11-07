@@ -1,3 +1,16 @@
 {
-  
+  "ADMIRAL-ADMIRAL.aromaPrinciple": "Lore",
+  "ADMIRAL-ADMIRAL.banter.alive.endTurnPing": "Co-op hurry up end turn ping message",
+  "ADMIRAL-ADMIRAL.banter.dead.endTurnPing": "...",
+  "ADMIRAL-ADMIRAL.cardsModifierDescription": "__ cards will now appear in rewards and shops.",
+  "ADMIRAL-ADMIRAL.cardsModifierTitle": "__ Cards",
+  "ADMIRAL-ADMIRAL.description": "Character Selection\nScreen Description",
+  "ADMIRAL-ADMIRAL.eventDeathPrevention": "Co-op survival line",
+  "ADMIRAL-ADMIRAL.goldMonologue": "Line spoken when obtaining a large amount of gold",
+  "ADMIRAL-ADMIRAL.possessiveAdjective": "his/her/its",
+  "ADMIRAL-ADMIRAL.pronounObject": "him/her/it",
+  "ADMIRAL-ADMIRAL.pronounPossessive": "his/hers/its",
+  "ADMIRAL-ADMIRAL.pronounSubject": "he/she/it",
+  "ADMIRAL-ADMIRAL.title": "The Admiral",
+  "ADMIRAL-ADMIRAL.titleObject": "The Admiral"
 }
