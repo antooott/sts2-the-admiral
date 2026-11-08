@@ -1,4 +1,5 @@
-﻿using BaseLib.Abstracts;
+﻿using Admiral.AdmiralCode.Cards.Basic;
+using BaseLib.Abstracts;
 using Admiral.AdmiralCode.Extensions;
 using BaseLib.Utils.NodeFactories;
 using Godot;
@@ -21,16 +22,16 @@ public class Admiral : PlaceholderCharacterModel
 
     public override IEnumerable<CardModel> StartingDeck =>
     [
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<DefendIronclad>()
+        ModelDb.Card<StrikeAdmiral>(),
+        ModelDb.Card<StrikeAdmiral>(),
+        ModelDb.Card<StrikeAdmiral>(),
+        ModelDb.Card<StrikeAdmiral>(),
+        ModelDb.Card<StrikeAdmiral>(),
+        ModelDb.Card<DefendAdmiral>(),
+        ModelDb.Card<DefendAdmiral>(),
+        ModelDb.Card<DefendAdmiral>(),
+        ModelDb.Card<DefendAdmiral>(),
+        ModelDb.Card<DefendAdmiral>()
     ];
 
     public override IReadOnlyList<RelicModel> StartingRelics =>

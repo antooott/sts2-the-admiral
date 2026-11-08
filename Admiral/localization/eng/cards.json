@@ -1,3 +1,6 @@
 {
-  
+  "ADMIRAL-STRIKE_ADMIRAL.description": "Deal {Damage:diff()} damage.",
+  "ADMIRAL-STRIKE_ADMIRAL.title": "Strike",
+  "ADMIRAL-DEFEND_ADMIRAL.description": "Gain {Block:diff()} [gold]Block[/gold].",
+  "ADMIRAL-DEFEND_ADMIRAL.title": "Defend"
 }
