@@ -2,5 +2,7 @@
   "ADMIRAL-STRIKE_ADMIRAL.description": "Deal {Damage:diff()} damage.",
   "ADMIRAL-STRIKE_ADMIRAL.title": "Strike",
   "ADMIRAL-DEFEND_ADMIRAL.description": "Gain {Block:diff()} [gold]Block[/gold].",
-  "ADMIRAL-DEFEND_ADMIRAL.title": "Defend"
+  "ADMIRAL-DEFEND_ADMIRAL.title": "Defend",
+  "ADMIRAL-DOUBLE_TAP.description": "Deal {Damage:diff()} damage twice.",
+  "ADMIRAL-DOUBLE_TAP.title": "Double Tap"
 }
