@@ -30,7 +30,8 @@ public class Admiral : PlaceholderCharacterModel
         ModelDb.Card<DefendAdmiral>(),
         ModelDb.Card<DefendAdmiral>(),
         ModelDb.Card<DefendAdmiral>(),
-        ModelDb.Card<DefendAdmiral>()
+        ModelDb.Card<DefendAdmiral>(),
+        ModelDb.Card<WetSmite>()
     ];
 
     public override IReadOnlyList<RelicModel> StartingRelics =>
