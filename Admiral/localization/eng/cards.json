@@ -8,5 +8,9 @@
   "ADMIRAL-WET_SMITE.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold].",
   "ADMIRAL-WET_SMITE.title": "Wet Smite",
   "ADMIRAL-SLIDE.description": "Deal {Damage:diff()} damage. \\nThis costs 0 {energyPrefix:energyIcons(1)} if you have [gold]Vigor[/gold].",
-  "ADMIRAL-SLIDE.title": "Slide"
+  "ADMIRAL-SLIDE.title": "Slide",
+  "ADMIRAL-INTIMIDATE.description": "Apply {WeakPower:diff()} [gold]Weak[/gold] and {VulnerablePower:diff()} [gold]Vulnerable[/gold] to ALL enemies.",
+  "ADMIRAL-INTIMIDATE.title": "Intimidate",
+  "ADMIRAL-CURRENT.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold]. Your next attack applies {CurrentPower:diff()} [gold]Riptide[/gold].",
+  "ADMIRAL-CURRENT.title": "Current"
 }
