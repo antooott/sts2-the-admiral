@@ -21,6 +21,4 @@ public class FlipOut() : AdmiralCard(0, CardType.Attack, CardRarity.Common, Targ
             await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).WithHitCount(count).FromCard((CardModel) this, cardPlay).TargetingRandomOpponents(this.CombatState).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
         }
     }
-
-    //protected override void OnUpgrade() => this.DynamicVars.Damage.UpgradeValueBy(4M);
 }
