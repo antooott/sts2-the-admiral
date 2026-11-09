@@ -12,5 +12,7 @@
   "ADMIRAL-INTIMIDATE.description": "Apply {WeakPower:diff()} [gold]Weak[/gold] and {VulnerablePower:diff()} [gold]Vulnerable[/gold] to ALL enemies.",
   "ADMIRAL-INTIMIDATE.title": "Intimidate",
   "ADMIRAL-CURRENT.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold]. Your next attack applies {CurrentPower:diff()} [gold]Riptide[/gold].",
-  "ADMIRAL-CURRENT.title": "Current"
+  "ADMIRAL-CURRENT.title": "Current",
+  "ADMIRAL-FLIP_OUT.description": "Deal {Damage:diff()} damage to a random Enemy X times.",
+  "ADMIRAL-FLIP_OUT.title": "Flip Out"
 }
