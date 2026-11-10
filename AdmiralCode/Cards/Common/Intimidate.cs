@@ -19,15 +19,13 @@ public class Intimidate() : AdmiralCard(1, CardType.Skill, CardRarity.Common, Ta
     {
         await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
         VfxCmd.PlayOnCreatureCenter(this.Owner.Creature, "vfx/vfx_flying_slash");
-        if (this.CombatState is not null)
+        
+        foreach (Creature enemy in (IEnumerable<Creature>)this.CombatState!.HittableEnemies)
         {
-            foreach (Creature enemy in (IEnumerable<Creature>)this.CombatState.HittableEnemies)
-            {
-                await PowerCmd.Apply<WeakPower>(choiceContext, enemy, (Decimal)DynamicVars["WeakPower"].IntValue,
-                    this.Owner.Creature, (CardModel)this);
-                await PowerCmd.Apply<VulnerablePower>(choiceContext, enemy,
-                    (Decimal)DynamicVars["VulnerablePower"].IntValue, this.Owner.Creature, (CardModel)this);
-            }
+            await PowerCmd.Apply<WeakPower>(choiceContext, enemy, (Decimal)DynamicVars["WeakPower"].IntValue,
+                this.Owner.Creature, (CardModel)this);
+            await PowerCmd.Apply<VulnerablePower>(choiceContext, enemy,
+                (Decimal)DynamicVars["VulnerablePower"].IntValue, this.Owner.Creature, (CardModel)this);
         }
     }
 }
