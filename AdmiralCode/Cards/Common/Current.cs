@@ -8,7 +8,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace Admiral.AdmiralCode.Cards.Common;
 
-public class Current() : AdmiralCard(1, CardType.Skill, CardRarity.Basic, TargetType.Self)
+public class Current() : AdmiralCard(1, CardType.Skill, CardRarity.Common, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<VigorPower>(6), new PowerVar<CurrentPower>(3)];
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<VigorPower>(), HoverTipFactory.FromPower<CurrentPower>(), HoverTipFactory.FromPower<RiptidePower>()];
