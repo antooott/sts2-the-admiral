@@ -18,5 +18,8 @@
   "ADMIRAL-DEEP_BREATH.description": "Gain {Block:diff()} [gold]Block[/gold]. Gain {VigorPower:diff()} [gold]Vigor[/gold].",
   "ADMIRAL-DEEP_BREATH.title": "Deep Breath",
   "ADMIRAL-PLIP_PLAP.description": "Deal {Damage:diff()} damage twice.",
-  "ADMIRAL-PLIP_PLAP.title": "Plip Plap"
+  "ADMIRAL-PLIP_PLAP.title": "Plip Plap",
+  
+  "ADMIRAL-WIDE_SWING.description": "Deal {Damage:diff()} damage.",
+  "ADMIRAL-WIDE_SWING.title": "Wide Swing"
 }
