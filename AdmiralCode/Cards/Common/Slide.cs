@@ -27,6 +27,7 @@ public class Slide() : AdmiralCard(1, CardType.Attack, CardRarity.Common, Target
     
     private void ReduceCost() => this.EnergyCost.SetThisTurn(0);
     private void RestoreCost() => this.EnergyCost.SetThisTurn(this.CanonicalEnergyCost);
+    protected override bool ShouldGlowGoldInternal => this.Owner.Creature.HasPower<VigorPower>();
     
     public override Task AfterCardEnteredCombat(CardModel card)
     {
