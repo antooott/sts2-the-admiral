@@ -7,5 +7,8 @@
   "ADMIRAL-CURRENT_POWER.title": "Current",
   "ADMIRAL-DRAG_UNDER_POWER.description": "Your next attack deals more damage and applies an equal amout of [gold]Doom[/gold]",
   "ADMIRAL-DRAG_UNDER_POWER.smartDescription": "ts boutta blow",
-  "ADMIRAL-DRAG_UNDER_POWER.title": "Drag Under"
+  "ADMIRAL-DRAG_UNDER_POWER.title": "Drag Under",
+  "ADMIRAL-AVIAN_FORM_POWER.description": "avian form desc",
+  "ADMIRAL-AVIAN_FORM_POWER.smartDescription": "avian form smart desc",
+  "ADMIRAL-AVIAN_FORM_POWER.title": "Avian Form"
 }
