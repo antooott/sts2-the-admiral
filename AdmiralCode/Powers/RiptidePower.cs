@@ -16,7 +16,7 @@ public sealed class RiptidePower : AdmiralPower
     public override PowerStackType StackType => PowerStackType.Counter;
 
     public override Color AmountLabelColor => PowerModel._normalAmountLabelColor;
-    private Boolean _tookAttackDamage = false;
+    private Boolean _tookDamageLastTurn = false;
 
     public override async Task AfterSideTurnStart(
         CombatSide side,
@@ -25,11 +25,11 @@ public sealed class RiptidePower : AdmiralPower
     {
         if (!participants.Contains<Creature>(this.Owner))
             return;
-        if (_tookAttackDamage)
+        if (_tookDamageLastTurn)
         {
             await this.Trigger();
         }
-        _tookAttackDamage = false;
+        _tookDamageLastTurn = false;
     }
     
     public async Task Trigger()
@@ -44,7 +44,7 @@ public sealed class RiptidePower : AdmiralPower
     {
         if (result.TotalDamage > 0 && CombatState.CurrentSide == CombatSide.Player)
         {
-            _tookAttackDamage = true;
+            _tookDamageLastTurn = true;
         }
         return Task.CompletedTask;
     }
