@@ -19,11 +19,13 @@
   "ADMIRAL-DEEP_BREATH.title": "Deep Breath",
   "ADMIRAL-PLIP_PLAP.description": "Deal {Damage:diff()} damage twice.",
   "ADMIRAL-PLIP_PLAP.title": "Plip Plap",
+  "ADMIRAL-OCCULT_STRIKE.description": "Deal {Damage:diff()} damage.\\nScry {Scry:diff()}.",
+  "ADMIRAL-OCCULT_STRIKE.title": "Occult Strike",
   
   "ADMIRAL-WIDE_SWING.description": "Deal {Damage:diff()} damage.",
   "ADMIRAL-WIDE_SWING.title": "Wide Swing",
 
-  "ADMIRAL-DRAG_UNDER.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold]. \\nThe next Attack you play deals {IfUpgraded:show:triple|double} damage and applies [gold]Doom[/gold] equal to damage dealt.",
+  "ADMIRAL-DRAG_UNDER.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold].\\nThe next Attack you play deals {IfUpgraded:show:triple|double} damage and applies [gold]Doom[/gold] equal to damage dealt.",
   "ADMIRAL-DRAG_UNDER.title": "Drag Under",
   "ADMIRAL-AVIAN_FORM.description": "Damage you take is halved. Your maximum hand size is halved.",
   "ADMIRAL-AVIAN_FORM.title": "Avian Form"
