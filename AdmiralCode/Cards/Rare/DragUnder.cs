@@ -21,6 +21,6 @@ public class DragUnder() : AdmiralCard(3, CardType.Skill, CardRarity.Rare, Targe
     protected override void OnUpgrade()
     {
         DynamicVars["VigorPower"].UpgradeValueBy(2M);
-        DynamicVars["BanishingSmitePower"].UpgradeValueBy(1M);
+        DynamicVars["DragUnderPower"].UpgradeValueBy(1M);
     }
 }
