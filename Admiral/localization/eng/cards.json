@@ -16,5 +16,7 @@
   "ADMIRAL-FLIP_OUT.description": "Deal {Damage:diff()} damage to a random Enemy X{IfUpgraded:show:+1|} times.",
   "ADMIRAL-FLIP_OUT.title": "Flip Out",
   "ADMIRAL-DEEP_BREATH.description": "Gain {Block:diff()} [gold]Block[/gold]. Gain {VigorPower:diff()} [gold]Vigor[/gold].",
-  "ADMIRAL-DEEP_BREATH.title": "Deep Breath"
+  "ADMIRAL-DEEP_BREATH.title": "Deep Breath",
+  "ADMIRAL-PLIP_PLAP.description": "Deal {Damage:diff()} damage twice.",
+  "ADMIRAL-PLIP_PLAP.title": "Plip Plap"
 }
