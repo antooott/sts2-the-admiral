@@ -4,5 +4,8 @@
   "ADMIRAL-RIPTIDE_POWER.title": "Riptide",
   "ADMIRAL-CURRENT_POWER.description": "Your next attack applies an amount of [gold]Riptide[/gold].",
   "ADMIRAL-CURRENT_POWER.smartDescription": "Your next attack applies an amount of [gold]Riptide[/gold].",
-  "ADMIRAL-CURRENT_POWER.title": "Current"
+  "ADMIRAL-CURRENT_POWER.title": "Current",
+  "ADMIRAL-DRAG_UNDER_POWER.description": "Your next attack deals more damage and applies an equal amout of [gold]Doom[/gold]",
+  "ADMIRAL-DRAG_UNDER_POWER.smartDescription": "ts boutta blow",
+  "ADMIRAL-DRAG_UNDER_POWER.title": "Drag Under"
 }
