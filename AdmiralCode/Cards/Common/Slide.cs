@@ -26,6 +26,7 @@ public class Slide() : AdmiralCard(1, CardType.Attack, CardRarity.Common, Target
     }
     
     private void ReduceCost() => this.EnergyCost.SetThisTurn(0);
+    private void RestoreCost() => this.EnergyCost.SetThisTurn(this.CanonicalEnergyCost);
     
     public override Task AfterCardEnteredCombat(CardModel card)
     {
@@ -38,7 +39,10 @@ public class Slide() : AdmiralCard(1, CardType.Attack, CardRarity.Common, Target
     public override Task AfterCardPlayedLate(PlayerChoiceContext context, CardPlay cardPlay)
     {
         if (!this.Owner.Creature.HasPower<VigorPower>())
+        {
+            this.RestoreCost();
             return base.AfterCardPlayedLate(context, cardPlay);
+        }
         this.ReduceCost();
         return base.AfterCardPlayedLate(context, cardPlay);
     }
