@@ -24,7 +24,7 @@
   
   "ADMIRAL-WIDE_SWING.description": "Deal {Damage:diff()} damage.",
   "ADMIRAL-WIDE_SWING.title": "Wide Swing",
-  "ADMIRAL-CITRUS_SNACK.description": "Exhaust all of your Statuses.{IfUpgraded:show: Draw 1 Card.|}",
+  "ADMIRAL-CITRUS_SNACK.description": "Exhaust all of your Statuses.{IfUpgraded:show: Draw {Cards:diff()} Card.|}",
   "ADMIRAL-CITRUS_SNACK.title": "Citrus Snack",
   "ADMIRAL-MAKE_A_SPLASH.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold].",
   "ADMIRAL-MAKE_A_SPLASH.title": "Make a Splash",
