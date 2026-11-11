@@ -32,5 +32,8 @@
   "ADMIRAL-DRAG_UNDER.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold].\\nThe next Attack you play deals {IfUpgraded:show:triple|double} damage and applies [gold]Doom[/gold] equal to damage dealt.",
   "ADMIRAL-DRAG_UNDER.title": "Drag Under",
   "ADMIRAL-AVIAN_FORM.description": "Damage you take is halved. Your maximum hand size is halved.",
-  "ADMIRAL-AVIAN_FORM.title": "Avian Form"
+  "ADMIRAL-AVIAN_FORM.title": "Avian Form",
+
+  "ADMIRAL-SCURVY.description": "At the end of your turn, gain {Power:diff()} Frail, Weak or Vulnerable at random.",
+  "ADMIRAL-SCURVY.title": "Scurvy"
 }
