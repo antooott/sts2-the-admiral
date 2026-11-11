@@ -23,6 +23,8 @@
   "ADMIRAL-OCCULT_STRIKE.title": "Occult Strike",
   "ADMIRAL-SEAFARERS_STRIKE.description": "Deal {Damage:diff()} damage. Add a [gold]Scurvy[/gold] into your [gold]Discard Pile[/gold].",
   "ADMIRAL-SEAFARERS_STRIKE.title": "Seafarer's Strike",
+  "ADMIRAL-SAFE_ROUTE.description": "Gain {Block:diff()} [gold]Block[/gold]. Add a [gold]Scurvy[/gold] into your [gold]Discard Pile[/gold].",
+  "ADMIRAL-SAFE_ROUTE.title": "Safe Route",
   
   "ADMIRAL-WIDE_SWING.description": "Deal {Damage:diff()} damage.",
   "ADMIRAL-WIDE_SWING.title": "Wide Swing",
