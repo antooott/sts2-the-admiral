@@ -21,6 +21,8 @@
   "ADMIRAL-PLIP_PLAP.title": "Plip Plap",
   "ADMIRAL-OCCULT_STRIKE.description": "Deal {Damage:diff()} damage.\\nScry {Scry:diff()}.",
   "ADMIRAL-OCCULT_STRIKE.title": "Occult Strike",
+  "ADMIRAL-SEAFARERS_STRIKE.description": "Deal {Damage:diff()} damage. Add a [gold]Scurvy[/gold] into your [gold]Discard Pile[/gold].",
+  "ADMIRAL-SEAFARERS_STRIKE.title": "Seafarer's Strike",
   
   "ADMIRAL-WIDE_SWING.description": "Deal {Damage:diff()} damage.",
   "ADMIRAL-WIDE_SWING.title": "Wide Swing",
