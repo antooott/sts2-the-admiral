@@ -1,13 +1,16 @@
+using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Models.CardPools;
 using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace Admiral.AdmiralCode.Cards.Status;
 
+[Pool(typeof(StatusCardPool))]
 public class Scurvy() : AdmiralCard(-1, CardType.Status, CardRarity.Status, TargetType.None)
 {
     public override int MaxUpgradeLevel => 0;
