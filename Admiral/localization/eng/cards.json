@@ -37,6 +37,8 @@
   "ADMIRAL-DRAG_UNDER.title": "Drag Under",
   "ADMIRAL-AVIAN_FORM.description": "Damage you take is halved. Your maximum hand size is halved.",
   "ADMIRAL-AVIAN_FORM.title": "Avian Form",
+  "ADMIRAL-ALL_OUT_ATTACK.description": "Deal {Damage:diff()} damage to ALL enemies. Discard 1 card.",
+  "ADMIRAL-ALL_OUT_ATTACK.title": "All-Out Attack",
 
   "ADMIRAL-SCURVY.description": "At the end of your turn, gain {Power:diff()} [gold]Frail[/gold], [gold]Weak[/gold] or [gold]Vulnerable[/gold] at random.",
   "ADMIRAL-SCURVY.title": "Scurvy"
