@@ -25,7 +25,7 @@
   "ADMIRAL-SEAFARERS_STRIKE.title": "Seafarer's Strike",
   "ADMIRAL-SAFE_ROUTE.description": "Gain {Block:diff()} [gold]Block[/gold]. Add a [gold]Scurvy[/gold] into your [gold]Discard Pile[/gold].",
   "ADMIRAL-SAFE_ROUTE.title": "Safe Route",
-  "ADMIRAL-TEST_OF_WILL.description": "Gain {Block:diff()} [gold]Block[/gold]. If you have Vigor, draw {Cards:diff()} {IfUpgraded:show:Cards|Card}.",
+  "ADMIRAL-TEST_OF_WILL.description": "Gain {Block:diff()} [gold]Block[/gold]. If you have Vigor, draw {Cards:diff()} {Cards:plural:card|cards}.",
   "ADMIRAL-TEST_OF_WILL.title": "Test of Will",
   
   "ADMIRAL-WIDE_SWING.description": "Deal {Damage:diff()} damage.",
