@@ -36,6 +36,6 @@
   "ADMIRAL-AVIAN_FORM.description": "Damage you take is halved. Your maximum hand size is halved.",
   "ADMIRAL-AVIAN_FORM.title": "Avian Form",
 
-  "ADMIRAL-SCURVY.description": "At the end of your turn, gain {Power:diff()} Frail, Weak or Vulnerable at random.",
+  "ADMIRAL-SCURVY.description": "At the end of your turn, gain {Power:diff()} [gold]Frail[/gold], [gold]Weak[/gold] or [gold]Vulnerable[/gold] at random.",
   "ADMIRAL-SCURVY.title": "Scurvy"
 }
