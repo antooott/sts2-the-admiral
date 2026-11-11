@@ -27,6 +27,8 @@
   "ADMIRAL-SAFE_ROUTE.title": "Safe Route",
   "ADMIRAL-TEST_OF_WILL.description": "Gain {Block:diff()} [gold]Block[/gold]. If you have Vigor, draw {Cards:diff()} {Cards:plural:card|cards}.",
   "ADMIRAL-TEST_OF_WILL.title": "Test of Will",
+  "ADMIRAL-ENDURANCE.description": "Gain [gold]Block[/gold] equal to your [gold]Vigor[/gold]{IfUpgraded:show: +3|}.",
+  "ADMIRAL-ENDURANCE.title": "Endurance",
   
   "ADMIRAL-WIDE_SWING.description": "Deal {Damage:diff()} damage.",
   "ADMIRAL-WIDE_SWING.title": "Wide Swing",
