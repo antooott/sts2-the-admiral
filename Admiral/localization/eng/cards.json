@@ -29,6 +29,8 @@
   "ADMIRAL-TEST_OF_WILL.title": "Test of Will",
   "ADMIRAL-ENDURANCE.description": "Gain [gold]Block[/gold] equal to your [gold]Vigor[/gold]{IfUpgraded:show: +3|}.",
   "ADMIRAL-ENDURANCE.title": "Endurance",
+  "ADMIRAL-STRATEGIZE.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold].\\nApply {WeakPower:diff()} [gold]Weak[/gold].",
+  "ADMIRAL-STRATEGIZE.title": "Strategize",
   
   "ADMIRAL-WIDE_SWING.description": "Deal {Damage:diff()} damage.",
   "ADMIRAL-WIDE_SWING.title": "Wide Swing",
