@@ -48,6 +48,8 @@
 
   "ADMIRAL-WET_BOOT.description": "Aw, dang it.",
   "ADMIRAL-WET_BOOT.title": "Wet Boot",
+  "ADMIRAL-GUPPY.description": "Gain {Block:diff()} [gold]Block[/gold].",
+  "ADMIRAL-GUPPY.title": "Guppy",
 
   "ADMIRAL-SCURVY.description": "At the end of your turn, gain {Power:diff()} [gold]Frail[/gold], [gold]Weak[/gold] or [gold]Vulnerable[/gold] at random.",
   "ADMIRAL-SCURVY.title": "Scurvy"
