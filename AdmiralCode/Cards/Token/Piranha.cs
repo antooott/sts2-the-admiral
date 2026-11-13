@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace Admiral.AdmiralCode.Cards.Token;
 
 [Pool(typeof(TokenCardPool))]
-public class Piranha() : AdmiralCard(1, CardType.Attack, CardRarity.Token, TargetType.AnyEnemy)
+public class Piranha() : AdmiralCard(0, CardType.Attack, CardRarity.Token, TargetType.AnyEnemy)
 {
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(5, ValueProp.Move)];
