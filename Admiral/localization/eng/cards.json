@@ -56,6 +56,12 @@
   "ADMIRAL-GUPPY.title": "Guppy",
   "ADMIRAL-PIRANHA.description": "Deal {Damage:diff()} damage.",
   "ADMIRAL-PIRANHA.title": "Piranha",
+  "ADMIRAL-JELLYFISH.description": "Deal {Damage:diff()} damage.\\nApply {WeakPower:diff()} [gold]Weak[/gold].",
+  "ADMIRAL-JELLYFISH.title": "Jellyfish",
+  "ADMIRAL-SEABASS.description": "Gain {Block:diff()} [gold]Block[/gold].",
+  "ADMIRAL-SEABASS.title": "Seabass",
+  "ADMIRAL-LEMON_GROVE.description": "Deal {Damage:diff()} damage.\\nApply {VulnerablePower:diff()} [gold]Vulnerable[/gold].",
+  "ADMIRAL-LEMON_GROVE.title": "Lemon Grove",
 
   "ADMIRAL-SCURVY.description": "At the end of your turn, gain {Power:diff()} [gold]Frail[/gold], [gold]Weak[/gold] or [gold]Vulnerable[/gold] at random.",
   "ADMIRAL-SCURVY.title": "Scurvy"
