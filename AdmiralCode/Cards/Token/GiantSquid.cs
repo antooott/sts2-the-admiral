@@ -22,6 +22,13 @@ public class GiantSquid() : AdmiralCard(2, CardType.Attack, CardRarity.Token, Ta
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).FromCard((CardModel) this, cardPlay).TargetingAllOpponents(this.CombatState!).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
+        foreach (Creature enemy in (IEnumerable<Creature>)this.CombatState!.HittableEnemies)
+        {
+            await PowerCmd.Apply<WeakPower>(choiceContext, enemy, (Decimal)DynamicVars["WeakPower"].IntValue,
+                this.Owner.Creature, (CardModel)this);
+            await PowerCmd.Apply<VulnerablePower>(choiceContext, enemy,
+                (Decimal)DynamicVars["VulnerablePower"].IntValue, this.Owner.Creature, (CardModel)this);
+        }
         if (this.IsUpgraded && CombatState?.HittableEnemies is not null)
             foreach (Creature target in this.CombatState.HittableEnemies)
                 await CreatureCmd.Stun(target);
