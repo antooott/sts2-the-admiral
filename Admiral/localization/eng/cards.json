@@ -66,6 +66,8 @@
   "ADMIRAL-SEABASS.title": "Seabass",
   "ADMIRAL-LEMON_GROVE.description": "Deal {Damage:diff()} damage.\\nApply {VulnerablePower:diff()} [gold]Vulnerable[/gold].",
   "ADMIRAL-LEMON_GROVE.title": "Lemon Grove",
+  "ADMIRAL-SWORDFISH.description": "Deal {Damage:diff()} damage {HitCount:diff()} times.",
+  "ADMIRAL-SWORDFISH.title": "Swordfish",
 
   "ADMIRAL-SCURVY.description": "At the end of your turn, gain {Power:diff()} [gold]Frail[/gold], [gold]Weak[/gold] or [gold]Vulnerable[/gold] at random.",
   "ADMIRAL-SCURVY.title": "Scurvy"
