@@ -23,7 +23,7 @@ public class HighSeaFishing() : AdmiralCard(0, CardType.Skill, CardRarity.Rare, 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         int scurvyCount = this.DynamicVars["Scurvy"].IntValue;
-        for(; scurvyCount >= 0; scurvyCount--)
+        for(; scurvyCount > 0; scurvyCount--)
             CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardToCombat((CardModel) this.CombatState!.CreateCard<Scurvy>(this.Owner), PileType.Discard, this.Owner));
         await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
         if (this.HasBetterBait)
