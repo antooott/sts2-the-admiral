@@ -68,6 +68,8 @@
   "ADMIRAL-LEMON_GROVE.title": "Lemon Grove",
   "ADMIRAL-SWORDFISH.description": "Deal {Damage:diff()} damage {HitCount:diff()} times.",
   "ADMIRAL-SWORDFISH.title": "Swordfish",
+  "ADMIRAL-WHALE.description": "Gain {Block:diff()} [gold]Block[/gold]. [gold]Block[/gold] is not removed at the start of your next turn.",
+  "ADMIRAL-WHALE.title": "Whale",
 
   "ADMIRAL-SCURVY.description": "At the end of your turn, gain {Power:diff()} [gold]Frail[/gold], [gold]Weak[/gold] or [gold]Vulnerable[/gold] at random.",
   "ADMIRAL-SCURVY.title": "Scurvy"
