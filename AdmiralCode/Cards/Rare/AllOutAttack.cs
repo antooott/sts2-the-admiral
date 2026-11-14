@@ -16,7 +16,7 @@ public class AllOutAttack() : AdmiralCard(1, CardType.Attack, CardRarity.Rare, T
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        AttackCommand attackCommand = await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).FromCard((CardModel) this, cardPlay).TargetingAllOpponents(this.CombatState!).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
+        await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).FromCard((CardModel) this, cardPlay).TargetingAllOpponents(this.CombatState!).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
         CardModel? card = (await CardSelectCmd.FromHandForDiscard(choiceContext, this.Owner, new CardSelectorPrefs(CardSelectorPrefs.DiscardSelectionPrompt, 1), null, (AbstractModel) this)).FirstOrDefault<CardModel>();
         if (card == null)
             return;
