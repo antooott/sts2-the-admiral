@@ -13,5 +13,8 @@
   "ADMIRAL-AVIAN_FORM_POWER.title": "Avian Form",
   "ADMIRAL-WAYFARE_POWER.description": "At the start of your next turn, add a [gold]Scurvy[/gold]into your [gold]Discard Pile[/gold].",
   "ADMIRAL-WAYFARE_POWER.smartDescription": "At the start of your next turn, add a [gold]Scurvy[/gold]into your [gold]Discard Pile[/gold].",
-  "ADMIRAL-WAYFARE_POWER.title": "Wayfaring"
+  "ADMIRAL-WAYFARE_POWER.title": "Wayfaring",
+  "ADMIRAL-BETTER_BAIT_POWER.description": "Whenever you [gold]fish[/gold], add ALL [gold]Catches[/gold] into your [gold]Hand[/gold].",
+  "ADMIRAL-BETTER_BAIT_POWER.smartDescription": "Whenever you [gold]fish[/gold], add ALL [gold]Catches[/gold] into your [gold]Hand[/gold].",
+  "ADMIRAL-BETTER_BAIT_POWER.title": "Better Bait"
 }
