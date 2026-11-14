@@ -1,3 +1,4 @@
+using Admiral.AdmiralCode.Keywords;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -11,7 +12,7 @@ namespace Admiral.AdmiralCode.Cards.Token;
 [Pool(typeof(TokenCardPool))]
 public class Piranha() : AdmiralCard(0, CardType.Attack, CardRarity.Token, TargetType.AnyEnemy)
 {
-    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust, AdmiralKeywords.Catch];
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(5, ValueProp.Move)];
     protected override void OnUpgrade() => this.DynamicVars.Damage.UpgradeValueBy(2);
 
