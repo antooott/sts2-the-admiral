@@ -10,5 +10,8 @@
   "ADMIRAL-DRAG_UNDER_POWER.title": "Drag Under",
   "ADMIRAL-AVIAN_FORM_POWER.description": "avian form desc",
   "ADMIRAL-AVIAN_FORM_POWER.smartDescription": "avian form smart desc",
-  "ADMIRAL-AVIAN_FORM_POWER.title": "Avian Form"
+  "ADMIRAL-AVIAN_FORM_POWER.title": "Avian Form",
+  "ADMIRAL-WAYFARE_POWER.description": "At the start of your next turn, add a [gold]Scurvy[/gold]into your [gold]Discard Pile[/gold].",
+  "ADMIRAL-WAYFARE_POWER.smartDescription": "At the start of your next turn, add a [gold]Scurvy[/gold]into your [gold]Discard Pile[/gold].",
+  "ADMIRAL-WAYFARE_POWER.title": "Wayfaring"
 }
