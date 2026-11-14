@@ -51,7 +51,7 @@
   "ADMIRAL-AVIAN_FORM.title": "Avian Form",
   "ADMIRAL-ALL_OUT_ATTACK.description": "Deal {Damage:diff()} damage to ALL enemies. Discard 1 card.",
   "ADMIRAL-ALL_OUT_ATTACK.title": "All-Out Attack",
-  "ADMIRAL-BETTER_BAIT.description": "Whenever you [gold]fish[/gold], add ALL [gold]Catches[/gold] into your [gold]Hand[/gold].",
+  "ADMIRAL-BETTER_BAIT.description": "Whenever you [gold]Fish[/gold], add ALL [gold]Catches[/gold] into your [gold]Hand[/gold].",
   "ADMIRAL-BETTER_BAIT.title": "Better Bait",
 
   "ADMIRAL-WET_BOOT.description": "Aw, dang it.",
