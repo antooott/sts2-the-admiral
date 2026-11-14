@@ -31,7 +31,7 @@
   "ADMIRAL-ENDURANCE.title": "Endurance",
   "ADMIRAL-STRATEGIZE.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold].\\nApply {WeakPower:diff()} [gold]Weak[/gold].",
   "ADMIRAL-STRATEGIZE.title": "Strategize",
-  "ADMIRAL-POND_FISHING.description": "Gain {Block:diff()} [gold]Block[/gold]. Add 1 random [gold]Pond Catch[/gold] to your [gold]Hand[/gold]",
+  "ADMIRAL-POND_FISHING.description": "Gain {Block:diff()} [gold]Block[/gold]. Add 1 random [gold]Pond Catch[/gold] to your [gold]Hand[/gold].",
   "ADMIRAL-POND_FISHING.title": "Pond Fishing",
   "ADMIRAL-WAYFARE.description": "Draw {Cards:diff()} {Cards:plural:card|cards}. Next turn, draw 1 card and add 1 [gold]Scurvy[/gold] into your [gold]Discard Pile[/gold].",
   "ADMIRAL-WAYFARE.title": "Wayfare",
