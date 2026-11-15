@@ -44,6 +44,8 @@
   "ADMIRAL-MAKE_A_SPLASH.title": "Make a Splash",
   "ADMIRAL-COASTAL_FISHING.description": "Put {IfUpgraded:show:2|a} random {Cards:plural:card|cards} from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold].\\nAdd 1 [gold]Coastal Catch[/gold] into your [gold]Hand[/gold].",
   "ADMIRAL-COASTAL_FISHING.title": "Coastal Fishing",
+  "ADMIRAL-LOOKOUT.description": "Scry {Scry:diff()}. Draw {Cards:diff()} {Cards:plural:card|cards}.",
+  "ADMIRAL-LOOKOUT.title": "Lookout",
 
   "ADMIRAL-DRAG_UNDER.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold].\\nThe next Attack you play deals {IfUpgraded:show:triple|double} damage and applies [gold]Doom[/gold] equal to damage dealt.",
   "ADMIRAL-DRAG_UNDER.title": "Drag Under",
