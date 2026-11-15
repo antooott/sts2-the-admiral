@@ -16,5 +16,8 @@
   "ADMIRAL-WAYFARE_POWER.title": "Wayfaring",
   "ADMIRAL-BETTER_BAIT_POWER.description": "Whenever you [gold]fish[/gold], add ALL [gold]Catches[/gold] into your [gold]Hand[/gold].",
   "ADMIRAL-BETTER_BAIT_POWER.smartDescription": "Whenever you [gold]fish[/gold], add ALL [gold]Catches[/gold] into your [gold]Hand[/gold].",
-  "ADMIRAL-BETTER_BAIT_POWER.title": "Better Bait"
+  "ADMIRAL-BETTER_BAIT_POWER.title": "Better Bait",
+  "ADMIRAL-SET_SAIL_POWER.description": "At the start of your turn, draw 1 card and add 1 [gold]Scurvy[/gold] into your [gold]Discard Pile[/gold].",
+  "ADMIRAL-SET_SAIL_POWER.smartDescription": "At the start of your turn, draw 1 card and add 1 [gold]Scurvy[/gold] into your [gold]Discard Pile[/gold].",
+  "ADMIRAL-SET_SAIL_POWER.title": "Set Sail"
 }
