@@ -1,11 +1,10 @@
 using Admiral.AdmiralCode.Cards.Status;
-using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
-using MegaCrit.Sts2.Core.Entities.Creatures;
+using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Powers;
+using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Models.Events;
 
 namespace Admiral.AdmiralCode.Powers;
 
@@ -15,12 +14,9 @@ public class WayfarePower() : AdmiralPower
 
     public override PowerStackType StackType => PowerStackType.Counter;
 
-    public override async Task AfterSideTurnStart(
-        CombatSide side,
-        IReadOnlyList<Creature> participants,
-        ICombatState combatState)
+    public override async Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
     {
-        if (!participants.Contains<Creature>(this.Owner))
+        if (player != this.Owner.Player)
             return;
         int count = this.Amount;
         for (; count > 0; count--)
