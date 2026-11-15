@@ -11,7 +11,6 @@ namespace Admiral.AdmiralCode.Cards.Uncommon;
 public class CitrusSnack() : AdmiralCard(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(1)];
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromKeyword(CardKeyword.Exhaust)];
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
