@@ -48,6 +48,8 @@
   "ADMIRAL-LOOKOUT.title": "Lookout",
   "ADMIRAL-SET_SAIL.description": "At the start of your turn, draw 1 card and add 1 [gold]Scurvy[/gold] into your [gold]Discard Pile[/gold].",
   "ADMIRAL-SET_SAIL.title": "Set Sail",
+  "ADMIRAL-SLICE_TWICE.description": "Deal {Damage:diff()} damage twice. Add a [gold]Scurvy[/gold] into your [gold]Discard Pile[/gold].",
+  "ADMIRAL-SLICE_TWICE.title": "Slice Twice",
 
   "ADMIRAL-DRAG_UNDER.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold].\\nThe next Attack you play deals {IfUpgraded:show:triple|double} damage and applies [gold]Doom[/gold] equal to damage dealt.",
   "ADMIRAL-DRAG_UNDER.title": "Drag Under",
