@@ -82,8 +82,7 @@
   "ADMIRAL-SCURVY.description": "At the end of your turn, gain {Power:diff()} [gold]Frail[/gold], [gold]Weak[/gold] or [gold]Vulnerable[/gold] at random.",
   "ADMIRAL-SCURVY.title": "Scurvy",
 
-
-
-  "ADMIRAL-SUMMON_NIBBIT.description": "summon cannon inshallah",
-  "ADMIRAL-SUMMON_NIBBIT.title": "Custom Summon"
+  
+  "ADMIRAL-CREATE_CANNON.description": "summon cannon inshallah",
+  "ADMIRAL-CREATE_CANNON.title": "Custom Cannon"
 }

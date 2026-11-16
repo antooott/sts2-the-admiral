@@ -1,3 +1,5 @@
+using Admiral.AdmiralCode.Monsters;
+using Admiral.AdmiralCode.Powers;
 using Godot;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
@@ -11,30 +13,30 @@ namespace Admiral.AdmiralCode.Commands;
 
 public static class AdmiralCmd
 {
-  public static async Task<Creature> Summon<T>(
+  public static async Task<Creature> SummonCannon(
     PlayerChoiceContext ctx,
     Player summoner,
-    int hp,
-    AbstractModel? source) where T : MonsterModel
+    AbstractModel? source)
   {
     var combatState = summoner.Creature.CombatState;
     ArgumentNullException.ThrowIfNull(combatState);
     ArgumentNullException.ThrowIfNull(summoner.PlayerCombatState);
-    var existing = combatState.Allies.FirstOrDefault(c => c.Monster is T && c.PetOwner == summoner);
+    var existing = combatState.Allies.FirstOrDefault(c => c.Monster is Cannon && c.PetOwner == summoner);
 
     var isReviving = existing is { IsAlive: false };
 
     if (existing is { IsAlive: true })
     {
-      await CreatureCmd.GainMaxHp(existing, hp);
+      // await CreatureCmd.SetMaxAndCurrentHp(existing, 3);
       return existing;
     }
-
     if (isReviving)
+      // has died this combat
       summoner.PlayerCombatState.AddPetInternal(existing!);
     else
     {
-      existing = await PlayerCmd.AddPet<T>(summoner);
+      // non-existent; create
+      existing = await PlayerCmd.AddPet<Cannon>(summoner);
       var node = NCombatRoom.Instance?.GetCreatureNode(existing);
       var playerNode = NCombatRoom.Instance?.GetCreatureNode(summoner.Creature);
 
@@ -48,13 +50,14 @@ public static class AdmiralCmd
       }
 
       await PowerCmd.Apply<DieForYouPower>(ctx, existing, 1M, null, null);
+      await PowerCmd.Apply<CannonPower>(ctx, existing, 1M, null, null);
       node?.TrackBlockStatus(summoner.Creature);
       node?.SetIsInteractable(true, true);
     }
 
     ArgumentNullException.ThrowIfNull(existing);
-    await CreatureCmd.SetMaxHp(existing, hp);
-    await CreatureCmd.Heal(existing, hp, isReviving);
+    await CreatureCmd.SetMaxHp(existing, 3);
+    await CreatureCmd.Heal(existing, 3, isReviving);
 
     return existing;
   }
