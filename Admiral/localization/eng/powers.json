@@ -22,5 +22,8 @@
   "ADMIRAL-SET_SAIL_POWER.title": "Set Sail",
   "ADMIRAL-CANNON_POWER.description": "At the start of your turn, your [gold]Cannon[/gold] will return to 3 hp and [gold]shoot[/gold] if it has [gold]Gunpowder[/gold]. Protect it!.",
   "ADMIRAL-CANNON_POWER.smartDescription": "At the start of your turn, your [gold]Cannon[/gold] will return to 3 hp and [gold]shoot[/gold] if it has [gold]Gunpowder[/gold]. Protect it!.",
-  "ADMIRAL-CANNON_POWER.title": "Cannon"
+  "ADMIRAL-CANNON_POWER.title": "Cannon",
+  "ADMIRAL-GUNPOWDER_POWER.description": "gunpowder desc",
+  "ADMIRAL-GUNPOWDER_POWER.smartDescription": "gunpowder smart desc",
+  "ADMIRAL-GUNPOWDER_POWER.title": "Gunpowder"
 }

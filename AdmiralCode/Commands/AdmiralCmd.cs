@@ -16,7 +16,8 @@ public static class AdmiralCmd
   public static async Task<Creature> SummonCannon(
     PlayerChoiceContext ctx,
     Player summoner,
-    AbstractModel? source)
+    AbstractModel? source,
+    int gunpowderAmount)
   {
     var combatState = summoner.Creature.CombatState;
     ArgumentNullException.ThrowIfNull(combatState);
@@ -28,11 +29,21 @@ public static class AdmiralCmd
     if (existing is { IsAlive: true })
     {
       // await CreatureCmd.SetMaxAndCurrentHp(existing, 3);
+      await PowerCmd.Apply<GunpowderPower>(ctx, existing, gunpowderAmount, null, null);
       return existing;
     }
+
     if (isReviving)
+    {
       // has died this combat
       summoner.PlayerCombatState.AddPetInternal(existing!);
+      ArgumentNullException.ThrowIfNull(existing);
+      await CreatureCmd.SetMaxHp(existing, 3);
+      await CreatureCmd.Heal(existing, 3, isReviving);
+      await PowerCmd.Apply<CannonPower>(ctx, existing!, 1M, null, null);
+      await PowerCmd.Apply<GunpowderPower>(ctx, existing!, gunpowderAmount, null, null);
+      return existing;
+    }
     else
     {
       // non-existent; create
@@ -51,6 +62,7 @@ public static class AdmiralCmd
 
       await PowerCmd.Apply<DieForYouPower>(ctx, existing, 1M, null, null);
       await PowerCmd.Apply<CannonPower>(ctx, existing, 1M, null, null);
+      await PowerCmd.Apply<GunpowderPower>(ctx, existing, gunpowderAmount, null, null);
       node?.TrackBlockStatus(summoner.Creature);
       node?.SetIsInteractable(true, true);
     }

@@ -9,9 +9,9 @@ namespace Admiral.AdmiralCode.Powers;
 
 public sealed class CannonPower : AdmiralPower
 {
-    public override PowerType Type => PowerType.Debuff;
+    public override PowerType Type => PowerType.Buff;
 
-    public override PowerStackType StackType => PowerStackType.Counter;
+    public override PowerStackType StackType => PowerStackType.Single;
 
     public override Color AmountLabelColor => PowerModel._normalAmountLabelColor;
 
