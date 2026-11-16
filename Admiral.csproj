@@ -59,6 +59,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <Folder Include="AdmiralCode\Monsters\" />
         <Folder Include="Admiral\images\card_portraits\big\"/>
         <Folder Include="Admiral\images\powers\big\"/>
         <Folder Include="Admiral\images\relics\big\"/>

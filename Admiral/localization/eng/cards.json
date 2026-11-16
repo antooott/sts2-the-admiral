@@ -80,5 +80,10 @@
   "ADMIRAL-GIANT_SQUID.title": "Giant Squid",
 
   "ADMIRAL-SCURVY.description": "At the end of your turn, gain {Power:diff()} [gold]Frail[/gold], [gold]Weak[/gold] or [gold]Vulnerable[/gold] at random.",
-  "ADMIRAL-SCURVY.title": "Scurvy"
+  "ADMIRAL-SCURVY.title": "Scurvy",
+
+
+
+  "ADMIRAL-SUMMON_NIBBIT.description": "summon cannon inshallah",
+  "ADMIRAL-SUMMON_NIBBIT.title": "Custom Summon"
 }
