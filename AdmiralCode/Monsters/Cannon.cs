@@ -15,7 +15,7 @@ namespace Admiral.AdmiralCode.Monsters;
 
 public sealed class Cannon : MonsterModel, ICustomModel
 {
-  private readonly int _blastDamage = 10;
+  private readonly int _blastDamage = 15;
   private bool HasGunPowder
   {
     get => this.IsMutable && this.Creature.HasPower<GunpowderPower>();
@@ -44,12 +44,15 @@ public sealed class Cannon : MonsterModel, ICustomModel
     if (player.Creature.CombatState!.Enemies.FirstOrDefault(c => c.IsAlive) != null &&
         this.Creature.HasPower<GunpowderPower>())
     {
-      IReadOnlyList<Creature> targets = this.Creature.PetOwner!.HasPower<FragbombPower>() ? player.Creature.CombatState!.Enemies : [player.Creature.CombatState!.Enemies.FirstOrDefault(c => c.IsAlive)!];
-      await BlastMove(targets);
+      for (int i = this.Creature.GetPowerAmount<GunpowderPower>(); i > 0; --i)
+      {
+        IReadOnlyList<Creature> targets = this.Creature.PetOwner!.HasPower<FragbombPower>() ? player.Creature.CombatState!.Enemies : [player.Creature.CombatState!.Enemies.FirstOrDefault(c => c.IsAlive)!];
+        await FireMove(targets);
+      }
     }
   }
   
-  private async Task BlastMove(IReadOnlyList<Creature> targets)
+  private async Task FireMove(IReadOnlyList<Creature> targets)
   {
     await DamageCmd.Attack((Decimal) _blastDamage)
       .FromMonster((MonsterModel) this)

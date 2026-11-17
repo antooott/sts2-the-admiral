@@ -14,6 +14,6 @@ public sealed class GunpowderPower : AdmiralPower
     public override Color AmountLabelColor => PowerModel._normalAmountLabelColor;
     public override async Task AfterPlayerTurnStartLate(PlayerChoiceContext choiceContext, Player player)
     {
-        await PowerCmd.Decrement(this);
+        await PowerCmd.Remove(this);
     }
 }
