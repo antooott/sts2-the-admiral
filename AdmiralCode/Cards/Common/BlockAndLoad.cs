@@ -1,5 +1,6 @@
 using Admiral.AdmiralCode.Commands;
 using Admiral.AdmiralCode.Powers;
+using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
@@ -16,6 +17,7 @@ public class BlockAndLoad() : AdmiralCard(2, CardType.Skill, CardRarity.Common, 
     protected override void OnUpgrade() => this.RemoveKeyword(CardKeyword.Exhaust);
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
+        await CreatureCmd.GainBlock(this.Owner.Creature, this.DynamicVars.Block, cardPlay);
         await AdmiralCmd.SummonCannon(choiceContext, this.Owner, cardPlay.Card, DynamicVars["GunpowderPower"].IntValue);
     }
 }
