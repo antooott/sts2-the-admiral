@@ -25,5 +25,8 @@
   "ADMIRAL-CANNON_POWER.title": "Cannon",
   "ADMIRAL-GUNPOWDER_POWER.description": "Your [gold]Cannon[/gold] needs [gold]Gunpowder[/gold] to [gold]Blast[/gold].",
   "ADMIRAL-GUNPOWDER_POWER.smartDescription": "Your [gold]Cannon[/gold] needs [gold]Gunpowder[/gold] to [gold]Blast[/gold].",
-  "ADMIRAL-GUNPOWDER_POWER.title": "Gunpowder"
+  "ADMIRAL-GUNPOWDER_POWER.title": "Gunpowder",
+  "ADMIRAL-FRAGBOMB_POWER.description": "Your [gold]Cannon[/gold] now deals damage to ALL enemies.",
+  "ADMIRAL-FRAGBOMB_POWER.smartDescription": "Your [gold]Cannon[/gold] now deals damage to ALL enemies.",
+  "ADMIRAL-FRAGBOMB_POWER.title": "Fragbomb"
 }

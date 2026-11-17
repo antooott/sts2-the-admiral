@@ -61,6 +61,8 @@
   "ADMIRAL-BETTER_BAIT.title": "Better Bait",
   "ADMIRAL-HIGH_SEA_FISHING.description": "Add {Scurvy:diff()} [gold]Scurvy[/gold] into your [gold]Discard Pile[/gold].\\nAdd 1 [gold]High Sea Catch[/gold] into your [gold]Hand[/gold].",
   "ADMIRAL-HIGH_SEA_FISHING.title": "High Sea Fishing",
+  "ADMIRAL-FRAGBOMB.description": "Your [gold]Cannon[/gold] now deals damage to ALL enemies.",
+  "ADMIRAL-FRAGBOMB.title": "Fragbomb",
 
   "ADMIRAL-WET_BOOT.description": "Aw, dang it.",
   "ADMIRAL-WET_BOOT.title": "Wet Boot",

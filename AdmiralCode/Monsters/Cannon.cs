@@ -1,5 +1,6 @@
 using Admiral.AdmiralCode.Powers;
 using BaseLib.Abstracts;
+using BaseLib.Extensions;
 using BaseLib.Patches.Features;
 using Godot;
 using MegaCrit.Sts2.Core.Commands;
@@ -36,14 +37,14 @@ public sealed class Cannon : MonsterModel, ICustomModel
   
   public override async Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
   {
-    if (!this.Creature.IsAlive)
+    if (!this.Creature.IsAlive || this.Creature.PetOwner == null)
       return;
     await CreatureCmd.SetMaxHp(this.Creature, 3);
     await CreatureCmd.Heal(this.Creature, 3);
     if (player.Creature.CombatState!.Enemies.FirstOrDefault(c => c.IsAlive) != null &&
         this.Creature.HasPower<GunpowderPower>())
     {
-      IReadOnlyList<Creature> targets = [player.Creature.CombatState!.Enemies.FirstOrDefault(c => c.IsAlive)!];
+      IReadOnlyList<Creature> targets = this.Creature.PetOwner!.HasPower<FragbombPower>() ? player.Creature.CombatState!.Enemies : [player.Creature.CombatState!.Enemies.FirstOrDefault(c => c.IsAlive)!];
       await BlastMove(targets);
     }
   }
