@@ -45,7 +45,10 @@ public sealed class CannonPower : AdmiralPower
         ICombatState combatState)
     {
         if (participants.Contains<Creature>(this.Owner) && this.Owner.IsAlive)
-            await CreatureCmd.SetMaxAndCurrentHp(this.Owner, 3);
+        {
+            await CreatureCmd.SetMaxHp(this.Owner, 3);
+            await CreatureCmd.Heal(this.Owner, 3);
+        }
     }
     public override async Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
     {
