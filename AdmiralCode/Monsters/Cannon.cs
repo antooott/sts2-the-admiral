@@ -1,6 +1,5 @@
 #nullable enable
 using Admiral.AdmiralCode.Powers;
-using Admiral.AdmiralCode.Singletons;
 using BaseLib.Abstracts;
 using BaseLib.Patches.Features;
 using Godot;
@@ -37,17 +36,5 @@ public sealed class Cannon : MonsterModel, ICustomModel
     initialState.FollowUpState = (MonsterState) initialState;
     states.Add((MonsterState) initialState);
     return new MegaCrit.Sts2.Core.MonsterMoves.MonsterMoveStateMachine.MonsterMoveStateMachine((IEnumerable<MonsterState>) states, (MonsterState) initialState);
-  }
-  
-  public override Task AfterDeath(
-    PlayerChoiceContext choiceContext,
-    Creature creature,
-    CardModel? source,
-    bool wasRemovalPrevented,
-    float deathAnimLength)
-  {
-    if (this.Creature.PetOwner != null)
-      IsCannonAliveField.IsCannonAlive[this.Creature.PetOwner] = false;
-    return Task.CompletedTask;
   }
 }
