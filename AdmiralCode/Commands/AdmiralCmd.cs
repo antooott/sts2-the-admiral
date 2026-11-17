@@ -7,7 +7,6 @@ using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.Nodes.Rooms;
 
 namespace Admiral.AdmiralCode.Commands;
@@ -42,7 +41,6 @@ public static class AdmiralCmd
       ArgumentNullException.ThrowIfNull(existing);
       await CreatureCmd.SetMaxHp(existing, 3);
       await CreatureCmd.Heal(existing, 3, isReviving);
-      await PowerCmd.Apply<CannonPower>(ctx, existing!, 1M, null, null);
       await PowerCmd.Apply<GunpowderPower>(ctx, existing!, gunpowderAmount, null, null);
       return existing;
     }
@@ -61,8 +59,6 @@ public static class AdmiralCmd
           .TweenProperty(node, "modulate", Colors.White, 0.35)
           .SetDelay(0.1);
       }
-
-      await PowerCmd.Apply<DieForYouPower>(ctx, existing, 1M, null, null);
       await PowerCmd.Apply<CannonPower>(ctx, existing, 1M, null, null);
       await PowerCmd.Apply<GunpowderPower>(ctx, existing, gunpowderAmount, null, null);
       node?.TrackBlockStatus(summoner.Creature);
