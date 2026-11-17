@@ -1,5 +1,6 @@
 using Admiral.AdmiralCode.Powers;
 using BaseLib.Abstracts;
+using BaseLib.Patches.Features;
 using Godot;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
@@ -14,6 +15,11 @@ namespace Admiral.AdmiralCode.Monsters;
 
 public sealed class Cannon : MonsterModel, ICustomModel
 {
+  private readonly int _blastDamage = 10;
+  private bool HasGunPowder
+  {
+    get => this.IsMutable && this.Creature.HasPower<GunpowderPower>();
+  }
   //public const float attackerAnimDelay = 0.3f;
   //public const string pokeAnim = "attack_poke";
   //public const string ostyAttackSfx = "event:/sfx/characters/osty/osty_attack";
@@ -40,7 +46,23 @@ public sealed class Cannon : MonsterModel, ICustomModel
       return;
     await CreatureCmd.SetMaxHp(this.Creature, 3);
     await CreatureCmd.Heal(this.Creature, 3);
-    if (player.Creature.CombatState!.Enemies.FirstOrDefault(c => c.IsAlive) != null && this.Creature.HasPower<GunpowderPower>())
-      await CreatureCmd.Damage(choiceContext, player.Creature.CombatState!.Enemies.FirstOrDefault(c => c.IsAlive)!, 10, ValueProp.Move, null, null);
+    if (player.Creature.CombatState!.Enemies.FirstOrDefault(c => c.IsAlive) != null &&
+        this.Creature.HasPower<GunpowderPower>())
+    {
+      IReadOnlyList<Creature> targets = [player.Creature.CombatState!.Enemies.FirstOrDefault(c => c.IsAlive)!];
+      await BlastMove(targets);
+    }
+  }
+  
+  private async Task BlastMove(IReadOnlyList<Creature> targets)
+  {
+    await DamageCmd.Attack((Decimal) _blastDamage)
+      .FromMonster((MonsterModel) this)
+      .TargetingFiltered(targets)
+      //.WithAttackerAnim("Attack", 0.2f)
+      //.WithAttackerFx(sfx: this.AttackSfx)
+      //.WithHitFx("vfx/vfx_attack_slash")
+      .Unpowered()
+      .Execute(null);
   }
 }
