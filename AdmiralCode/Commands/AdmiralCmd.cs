@@ -1,5 +1,6 @@
 using Admiral.AdmiralCode.Monsters;
 using Admiral.AdmiralCode.Powers;
+using Admiral.AdmiralCode.Singletons;
 using Godot;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
@@ -19,6 +20,7 @@ public static class AdmiralCmd
     AbstractModel? source,
     int gunpowderAmount)
   {
+    IsCannonAliveField.IsCannonAlive[summoner] = true;
     var combatState = summoner.Creature.CombatState;
     ArgumentNullException.ThrowIfNull(combatState);
     ArgumentNullException.ThrowIfNull(summoner.PlayerCombatState);

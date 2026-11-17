@@ -1,9 +1,11 @@
 #nullable enable
 using Admiral.AdmiralCode.Powers;
+using Admiral.AdmiralCode.Singletons;
 using BaseLib.Abstracts;
 using Godot;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
+using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.MonsterMoves.Intents;
 using MegaCrit.Sts2.Core.MonsterMoves.MonsterMoveStateMachine;
@@ -68,5 +70,17 @@ public sealed class Cannon : MonsterModel, ICustomModel
       .WithHitFx(VfxCmd.slashPath)
       .Execute(null);
     //await DamageCmd.Attack((Decimal) this._shotDamage).FromMonster((MonsterModel) this).WithAttackerAnim("Attack", 0.15f).WithAttackerFx(sfx: this.AttackSfx).WithHitFx("vfx/vfx_attack_slash").Execute(null);
+  }
+  
+  public override Task AfterDeath(
+    PlayerChoiceContext choiceContext,
+    Creature creature,
+    CardModel? source,
+    bool wasRemovalPrevented,
+    float deathAnimLength)
+  {
+    if (this.Creature.PetOwner != null)
+      IsCannonAliveField.IsCannonAlive[this.Creature.PetOwner] = false;
+    return Task.CompletedTask;
   }
 }
