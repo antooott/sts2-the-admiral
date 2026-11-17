@@ -35,6 +35,10 @@
   "ADMIRAL-POND_FISHING.title": "Pond Fishing",
   "ADMIRAL-WAYFARE.description": "Draw {Cards:diff()} {Cards:plural:card|cards}. Next turn, draw 1 card and add 1 [gold]Scurvy[/gold] into your [gold]Discard Pile[/gold].",
   "ADMIRAL-WAYFARE.title": "Wayfare",
+  "ADMIRAL-BLOCK_AND_LOAD.description": "Gain {Block:diff()} [gold]Block[/gold].\\n[gold]Load[/gold] {Load:diff()}.",
+  "ADMIRAL-BLOCK_AND_LOAD.title": "Block and Load",
+  "ADMIRAL-PRESS_THE_ATTACK.description": "Deal {Damage:diff()} damage.\\n[gold]Load[/gold] {Load:diff()}.",
+  "ADMIRAL-PRESS_THE_ATTACK.title": "Press the Attack",
   
   "ADMIRAL-WIDE_SWING.description": "Deal {Damage:diff()} damage.",
   "ADMIRAL-WIDE_SWING.title": "Wide Swing",
@@ -59,6 +63,8 @@
   "ADMIRAL-BETTER_BAIT.title": "Better Bait",
   "ADMIRAL-HIGH_SEA_FISHING.description": "Add {Scurvy:diff()} [gold]Scurvy[/gold] into your [gold]Discard Pile[/gold].\\nAdd 1 [gold]High Sea Catch[/gold] into your [gold]Hand[/gold].",
   "ADMIRAL-HIGH_SEA_FISHING.title": "High Sea Fishing",
+  "ADMIRAL-FRAGBOMB.description": "Your [gold]Cannon[/gold] now deals damage to ALL enemies.",
+  "ADMIRAL-FRAGBOMB.title": "Fragbomb",
 
   "ADMIRAL-WET_BOOT.description": "Aw, dang it.",
   "ADMIRAL-WET_BOOT.title": "Wet Boot",

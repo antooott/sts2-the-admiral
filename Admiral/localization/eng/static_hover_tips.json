@@ -1,3 +1,4 @@
 {
-  
+  "ADMIRAL-LOAD.description": "Summons your [gold]Cannon[/gold] and [gold]Loads[/gold] it with {Load:diff()} [gold]Gunpowder[/gold].",
+  "ADMIRAL-LOAD.title": "Load"
 }
