@@ -1,9 +1,14 @@
+using Admiral.AdmiralCode.Powers;
 using BaseLib.Abstracts;
 using Godot;
+using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
+using MegaCrit.Sts2.Core.Entities.Players;
+using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.MonsterMoves.Intents;
 using MegaCrit.Sts2.Core.MonsterMoves.MonsterMoveStateMachine;
+using MegaCrit.Sts2.Core.ValueProps;
 
 namespace Admiral.AdmiralCode.Monsters;
 
@@ -27,5 +32,15 @@ public sealed class Cannon : MonsterModel, ICustomModel
     initialState.FollowUpState = (MonsterState) initialState;
     states.Add((MonsterState) initialState);
     return new MegaCrit.Sts2.Core.MonsterMoves.MonsterMoveStateMachine.MonsterMoveStateMachine((IEnumerable<MonsterState>) states, (MonsterState) initialState);
+  }
+  
+  public override async Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
+  {
+    if (!this.Creature.IsAlive)
+      return;
+    await CreatureCmd.SetMaxHp(this.Creature, 3);
+    await CreatureCmd.Heal(this.Creature, 3);
+    if (player.Creature.CombatState!.Enemies.FirstOrDefault(c => c.IsAlive) != null && this.Creature.HasPower<GunpowderPower>())
+      await CreatureCmd.Damage(choiceContext, player.Creature.CombatState!.Enemies.FirstOrDefault(c => c.IsAlive)!, 10, ValueProp.Move, null, null);
   }
 }
