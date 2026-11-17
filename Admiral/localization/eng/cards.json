@@ -37,6 +37,8 @@
   "ADMIRAL-WAYFARE.title": "Wayfare",
   "ADMIRAL-BLOCK_AND_LOAD.description": "Gain {Block:diff()} [gold]Block[/gold].\\n[gold]Load[/gold] {Load:diff()}.",
   "ADMIRAL-BLOCK_AND_LOAD.title": "Block and Load",
+  "ADMIRAL-PRESS_THE_ATTACK.description": "Deal {Damage:diff()} damage.\\n[gold]Load[/gold] {Load:diff()}.",
+  "ADMIRAL-PRESS_THE_ATTACK.title": "Press the Attack",
   
   "ADMIRAL-WIDE_SWING.description": "Deal {Damage:diff()} damage.",
   "ADMIRAL-WIDE_SWING.title": "Wide Swing",
