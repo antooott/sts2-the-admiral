@@ -1,11 +1,6 @@
-#nullable enable
-using Admiral.AdmiralCode.Powers;
 using BaseLib.Abstracts;
-using BaseLib.Patches.Features;
 using Godot;
-using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
-using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.MonsterMoves.Intents;
 using MegaCrit.Sts2.Core.MonsterMoves.MonsterMoveStateMachine;
@@ -14,10 +9,6 @@ namespace Admiral.AdmiralCode.Monsters;
 
 public sealed class Cannon : MonsterModel, ICustomModel
 {
-  private bool HasGunPowder
-  {
-    get => this.IsMutable && this.Creature.HasPower<GunpowderPower>();
-  }
   //public const float attackerAnimDelay = 0.3f;
   //public const string pokeAnim = "attack_poke";
   //public const string ostyAttackSfx = "event:/sfx/characters/osty/osty_attack";
