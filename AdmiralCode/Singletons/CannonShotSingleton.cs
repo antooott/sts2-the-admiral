@@ -18,7 +18,8 @@ public class CannonShotSingleton() : CustomSingletonModel(HookType.Combat)
             foreach (Creature pet in player.Creature.Pets)
             {
                 if (pet.HasPower<GunpowderPower>())
-                    await CreatureCmd.Damage(choiceContext, player.Creature.CombatState!.Enemies[0], 10, ValueProp.Move, null, null);
+                    continue;
+                //await CreatureCmd.Damage(choiceContext, player.Creature.CombatState!.Enemies[0], 10, ValueProp.Move, null, null);
             }
         }
     }
