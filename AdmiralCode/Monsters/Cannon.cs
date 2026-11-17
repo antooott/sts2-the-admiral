@@ -9,7 +9,6 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.MonsterMoves.Intents;
 using MegaCrit.Sts2.Core.MonsterMoves.MonsterMoveStateMachine;
-using MegaCrit.Sts2.Core.ValueProps;
 
 namespace Admiral.AdmiralCode.Monsters;
 
@@ -20,16 +19,11 @@ public sealed class Cannon : MonsterModel, ICustomModel
   {
     get => this.IsMutable && this.Creature.HasPower<GunpowderPower>();
   }
-  //public const float attackerAnimDelay = 0.3f;
-  //public const string pokeAnim = "attack_poke";
-  //public const string ostyAttackSfx = "event:/sfx/characters/osty/osty_attack";
   public static Vector2 MinOffset => new Vector2(150f, -75f);
   public static Vector2 MaxOffset => new Vector2(250f, -75f);
   public static Vector2 ScaleRange => new Vector2(1f, 2f);
   public override int MinInitialHp => 3;
   public override int MaxInitialHp => 3;
-  //public override string DeathSfx => "event:/sfx/characters/osty/osty_die";
-  //public override bool HasDeathSfx => true;
   
   protected override MegaCrit.Sts2.Core.MonsterMoves.MonsterMoveStateMachine.MonsterMoveStateMachine GenerateMoveStateMachine()
   {
@@ -59,9 +53,9 @@ public sealed class Cannon : MonsterModel, ICustomModel
     await DamageCmd.Attack((Decimal) _blastDamage)
       .FromMonster((MonsterModel) this)
       .TargetingFiltered(targets)
-      //.WithAttackerAnim("Attack", 0.2f)
-      //.WithAttackerFx(sfx: this.AttackSfx)
-      //.WithHitFx("vfx/vfx_attack_slash")
+      .WithAttackerAnim("Attack", 0.2f) // no
+      .WithAttackerFx(sfx: this.AttackSfx) // no
+      .WithHitFx("vfx/vfx_attack_slash") // no
       .Unpowered()
       .Execute(null);
   }
