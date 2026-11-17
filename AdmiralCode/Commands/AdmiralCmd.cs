@@ -12,7 +12,7 @@ namespace Admiral.AdmiralCode.Commands;
 
 public static class AdmiralCmd
 {
-  public static async Task<Creature> SummonCannon(
+  public static async Task<Creature> LoadCannon(
     PlayerChoiceContext ctx,
     Player summoner,
     AbstractModel? source,
