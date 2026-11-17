@@ -13,7 +13,7 @@ public class BlockAndLoad() : AdmiralCard(2, CardType.Skill, CardRarity.Common, 
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(8, ValueProp.Move), new PowerVar<GunpowderPower>(2)];
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<GunpowderPower>()];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<GunpowderPower>(), HoverTipFactory.FromPower<CannonPower>()];
     protected override void OnUpgrade() => this.RemoveKeyword(CardKeyword.Exhaust);
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {

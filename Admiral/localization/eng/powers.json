@@ -21,9 +21,9 @@
   "ADMIRAL-SET_SAIL_POWER.smartDescription": "At the start of your turn, draw 1 card and add 1 [gold]Scurvy[/gold] into your [gold]Discard Pile[/gold].",
   "ADMIRAL-SET_SAIL_POWER.title": "Set Sail",
   "ADMIRAL-CANNON_POWER.description": "Your [gold]Cannon[/gold] absorbs all unblocked attack damage.\\nAt the start of your turn, it will [gold]Repair[/gold] itself and [gold]Blast[/gold] if it has [gold]Gunpowder[/gold].",
-  "ADMIRAL-CANNON_POWER.smartDescription": "Your [gold]Cannon[/gold] absorbs all unblocked attack damage.\\nAt the start of your turn, it will [gold]Repair[/gold] itself and [gold]Blast[/gold] if it has [gold]Gunpowder[/gold].",
+  "ADMIRAL-CANNON_POWER.smartDescription": "Your [gold]Cannon[/gold] absorbs all unblocked attack damage.\\nAt the start of your turn, it will [gold]Repair[/gold] itself and [gold]Blast[/gold] the leftmost enemy for 10 damage if it has [gold]Gunpowder[/gold].",
   "ADMIRAL-CANNON_POWER.title": "Cannon",
-  "ADMIRAL-GUNPOWDER_POWER.description": "gunpowder desc",
-  "ADMIRAL-GUNPOWDER_POWER.smartDescription": "gunpowder smart desc",
+  "ADMIRAL-GUNPOWDER_POWER.description": "Summons your [gold]Cannon[/gold] and loads it with [gold]Gunpowder[/gold], which it needs to [gold]Blast[/gold], dealing 10 damage to the leftmost enemy.",
+  "ADMIRAL-GUNPOWDER_POWER.smartDescription": "Your [gold]Cannon[/gold] needs [gold]Gunpowder[/gold] to [gold]Blast[/gold].",
   "ADMIRAL-GUNPOWDER_POWER.title": "Gunpowder"
 }
