@@ -39,19 +39,12 @@ public sealed class CannonPower : AdmiralPower
     {
         return creature != this.Owner;
     }
-    public override async Task AfterSideTurnStart(
-        CombatSide side,
-        IReadOnlyList<Creature> participants,
-        ICombatState combatState)
-    {
-        if (participants.Contains<Creature>(this.Owner) && this.Owner.IsAlive)
-        {
-            await CreatureCmd.SetMaxHp(this.Owner, 3);
-            await CreatureCmd.Heal(this.Owner, 3);
-        }
-    }
     public override async Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
     {
+        if (!this.Owner.IsAlive)
+            return;
+        await CreatureCmd.SetMaxHp(this.Owner, 3);
+        await CreatureCmd.Heal(this.Owner, 3);
         if (player.Creature.CombatState!.Enemies.FirstOrDefault(c => c.IsAlive) != null && this.Owner.HasPower<GunpowderPower>())
             await CreatureCmd.Damage(choiceContext, player.Creature.CombatState!.Enemies.FirstOrDefault(c => c.IsAlive)!, 10, ValueProp.Move, null, null);
     }
