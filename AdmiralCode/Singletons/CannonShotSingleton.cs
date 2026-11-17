@@ -15,15 +15,10 @@ public class CannonShotSingleton() : CustomSingletonModel(HookType.Combat)
     {
         if (IsCannonAliveField.IsCannonAlive[player])
         {
-            await PlayerCmd.GainEnergy(1, player);
             foreach (Creature pet in player.Creature.Pets)
             {
-                await PlayerCmd.GainEnergy(1, player);
                 if (pet.HasPower<GunpowderPower>())
-                {
-                    await PlayerCmd.GainEnergy(1, player);
                     await CreatureCmd.Damage(choiceContext, player.Creature.CombatState!.Enemies[0], 10, ValueProp.Move, null, null);
-                }
             }
         }
     }
