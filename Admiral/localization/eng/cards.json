@@ -35,6 +35,8 @@
   "ADMIRAL-POND_FISHING.title": "Pond Fishing",
   "ADMIRAL-WAYFARE.description": "Draw {Cards:diff()} {Cards:plural:card|cards}. Next turn, draw 1 card and add 1 [gold]Scurvy[/gold] into your [gold]Discard Pile[/gold].",
   "ADMIRAL-WAYFARE.title": "Wayfare",
+  "ADMIRAL-BLOCK_AND_LOAD.description": "Gain {Block:diff()} [gold]Block[/gold].\\nLoad {GunpowderPower:diff()} [gold]Gunpowder[/gold].",
+  "ADMIRAL-BLOCK_AND_LOAD.title": "Block and Load",
   
   "ADMIRAL-WIDE_SWING.description": "Deal {Damage:diff()} damage.",
   "ADMIRAL-WIDE_SWING.title": "Wide Swing",
@@ -80,9 +82,5 @@
   "ADMIRAL-GIANT_SQUID.title": "Giant Squid",
 
   "ADMIRAL-SCURVY.description": "At the end of your turn, gain {Power:diff()} [gold]Frail[/gold], [gold]Weak[/gold] or [gold]Vulnerable[/gold] at random.",
-  "ADMIRAL-SCURVY.title": "Scurvy",
-
-  
-  "ADMIRAL-CREATE_CANNON.description": "summon cannon inshallah",
-  "ADMIRAL-CREATE_CANNON.title": "Custom Cannon"
+  "ADMIRAL-SCURVY.title": "Scurvy"
 }
