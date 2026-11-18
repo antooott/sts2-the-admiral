@@ -27,7 +27,7 @@ public sealed class Flora() : AdmiralCard(1, CardType.Attack, CardRarity.Token, 
             .Targeting(cardPlay.Target)
             .WithHitFx(VfxCmd.slashPath)
             .Execute(choiceContext);
-        await PowerCmd.Apply<ConstrictPower>(choiceContext, cardPlay.Target, this.DynamicVars.Weak.BaseValue, this.Owner.Creature, (CardModel) this);
+        await PowerCmd.Apply<ConstrictPower>(choiceContext, cardPlay.Target, this.DynamicVars["ConstrictPower"].BaseValue, this.Owner.Creature, (CardModel) this);
     }
     
 }
