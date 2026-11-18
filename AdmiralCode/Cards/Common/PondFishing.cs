@@ -12,7 +12,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace Admiral.AdmiralCode.Cards.Common;
 
-public class PondFishing() : AdmiralCard(1, CardType.Skill, CardRarity.Common, TargetType.Self)
+public sealed class PondFishing() : AdmiralCard(1, CardType.Skill, CardRarity.Common, TargetType.Self)
 {
     private bool HasBetterBait => this.IsMutable  && this.Owner.Creature.HasPower<BetterBaitPower>();
     protected override bool ShouldGlowGoldInternal => this.HasBetterBait;

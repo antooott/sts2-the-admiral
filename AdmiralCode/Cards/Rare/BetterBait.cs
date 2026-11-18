@@ -8,7 +8,7 @@ using MegaCrit.Sts2.Core.Models;
 
 namespace Admiral.AdmiralCode.Cards.Rare;
 
-public class BetterBait() : AdmiralCard(1, CardType.Power, CardRarity.Rare, TargetType.Self)
+public sealed class BetterBait() : AdmiralCard(1, CardType.Power, CardRarity.Rare, TargetType.Self)
 {
     protected override void OnUpgrade() => this.EnergyCost.UpgradeBy(-1);
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromKeyword(AdmiralKeywords.Catch)];

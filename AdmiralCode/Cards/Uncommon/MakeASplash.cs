@@ -6,7 +6,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace Admiral.AdmiralCode.Cards.Uncommon;
 
-public class MakeASplash() : AdmiralCard(0, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
+public sealed class MakeASplash() : AdmiralCard(0, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<VigorPower>(8)];
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Innate, CardKeyword.Exhaust];

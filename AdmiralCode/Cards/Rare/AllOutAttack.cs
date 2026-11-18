@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace Admiral.AdmiralCode.Cards.Rare;
 
-public class AllOutAttack() : AdmiralCard(1, CardType.Attack, CardRarity.Rare, TargetType.AllEnemies)
+public sealed class AllOutAttack() : AdmiralCard(1, CardType.Attack, CardRarity.Rare, TargetType.AllEnemies)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(14, ValueProp.Move)];
     protected override void OnUpgrade() => this.DynamicVars.Damage.UpgradeValueBy(5);

@@ -6,7 +6,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace Admiral.AdmiralCode.Cards.Basic;
 
-public class DefendAdmiral() : AdmiralCard(1, CardType.Skill, CardRarity.Basic, TargetType.Self)
+public sealed class DefendAdmiral() : AdmiralCard(1, CardType.Skill, CardRarity.Basic, TargetType.Self)
 {
     protected override HashSet<CardTag> CanonicalTags => [CardTag.Defend];
     protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(5, ValueProp.Move)];

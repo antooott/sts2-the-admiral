@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace Admiral.AdmiralCode.Cards.Common;
 
-public class Intimidate() : AdmiralCard(1, CardType.Skill, CardRarity.Common, TargetType.AllEnemies)
+public sealed class Intimidate() : AdmiralCard(1, CardType.Skill, CardRarity.Common, TargetType.AllEnemies)
 {
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<WeakPower>(1), new PowerVar<VulnerablePower>(1)];

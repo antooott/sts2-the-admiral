@@ -7,7 +7,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace Admiral.AdmiralCode.Cards.Basic;
 
-public class DoubleTap() : AdmiralCard(1, CardType.Attack, CardRarity.Basic, TargetType.AnyEnemy)
+public sealed class DoubleTap() : AdmiralCard(1, CardType.Attack, CardRarity.Basic, TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(2, ValueProp.Move)];
     protected override void OnUpgrade() => this.DynamicVars.Damage.UpgradeValueBy(2);

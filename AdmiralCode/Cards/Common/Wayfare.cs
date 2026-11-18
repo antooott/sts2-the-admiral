@@ -10,7 +10,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace Admiral.AdmiralCode.Cards.Common;
 
-public class Wayfare() : AdmiralCard(0, CardType.Skill, CardRarity.Common, TargetType.Self)
+public sealed class Wayfare() : AdmiralCard(0, CardType.Skill, CardRarity.Common, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(1)];
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromCard<Scurvy>()];

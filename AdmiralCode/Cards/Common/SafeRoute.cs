@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace Admiral.AdmiralCode.Cards.Common;
 
-public class SafeRoute() : AdmiralCard(0, CardType.Skill, CardRarity.Common, TargetType.Self)
+public sealed class SafeRoute() : AdmiralCard(0, CardType.Skill, CardRarity.Common, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(9, ValueProp.Move)];
     protected override void OnUpgrade() => this.DynamicVars.Block.UpgradeValueBy(3);

@@ -11,7 +11,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace Admiral.AdmiralCode.Cards.Token;
 
 [Pool(typeof(TokenCardPool))]
-public class Swordfish() : AdmiralCard(1, CardType.Attack, CardRarity.Token, TargetType.AnyEnemy)
+public sealed class Swordfish() : AdmiralCard(1, CardType.Attack, CardRarity.Token, TargetType.AnyEnemy)
 {
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust, AdmiralKeywords.Catch];
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(5, ValueProp.Move), new HitCountVar(4)];

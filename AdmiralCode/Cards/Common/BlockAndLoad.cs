@@ -10,7 +10,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace Admiral.AdmiralCode.Cards.Common;
 
-public class BlockAndLoad() : AdmiralCard(2, CardType.Skill, CardRarity.Common, TargetType.Self)
+public sealed class BlockAndLoad() : AdmiralCard(2, CardType.Skill, CardRarity.Common, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(8, ValueProp.Move), new LoadVar(2)];
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];

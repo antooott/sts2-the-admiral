@@ -8,7 +8,7 @@ using MegaCrit.Sts2.Core.Models;
 
 namespace Admiral.AdmiralCode.Cards.Uncommon;
 
-public class SetSail() : AdmiralCard(1, CardType.Power, CardRarity.Uncommon, TargetType.Self)
+public sealed class SetSail() : AdmiralCard(1, CardType.Power, CardRarity.Uncommon, TargetType.Self)
 {
     protected override void OnUpgrade() => this.EnergyCost.UpgradeBy(-1);
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromCard<Scurvy>()];

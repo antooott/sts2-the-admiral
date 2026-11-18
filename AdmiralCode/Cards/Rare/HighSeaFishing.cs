@@ -12,7 +12,7 @@ using MegaCrit.Sts2.Core.Models.CardPools;
 
 namespace Admiral.AdmiralCode.Cards.Rare;
 
-public class HighSeaFishing() : AdmiralCard(0, CardType.Skill, CardRarity.Rare, TargetType.Self)
+public sealed class HighSeaFishing() : AdmiralCard(0, CardType.Skill, CardRarity.Rare, TargetType.Self)
 {
     private bool HasBetterBait => this.IsMutable  && this.Owner.Creature.HasPower<BetterBaitPower>();
     protected override bool ShouldGlowGoldInternal => this.HasBetterBait;

@@ -8,7 +8,7 @@ using MegaCrit.Sts2.Core.Models;
 
 namespace Admiral.AdmiralCode.Cards.Uncommon;
 
-public class CitrusSnack() : AdmiralCard(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
+public sealed class CitrusSnack() : AdmiralCard(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(1)];
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];

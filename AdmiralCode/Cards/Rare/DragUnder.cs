@@ -7,7 +7,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace Admiral.AdmiralCode.Cards.Rare;
 
-public class DragUnder() : AdmiralCard(3, CardType.Skill, CardRarity.Rare, TargetType.Self)
+public sealed class DragUnder() : AdmiralCard(3, CardType.Skill, CardRarity.Rare, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<VigorPower>(6), new PowerVar<DragUnderPower>(2)];
     

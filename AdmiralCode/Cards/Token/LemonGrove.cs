@@ -13,7 +13,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace Admiral.AdmiralCode.Cards.Token;
 
 [Pool(typeof(TokenCardPool))]
-public class LemonGrove() : AdmiralCard(1, CardType.Attack, CardRarity.Token, TargetType.AnyEnemy)
+public sealed class LemonGrove() : AdmiralCard(1, CardType.Attack, CardRarity.Token, TargetType.AnyEnemy)
 {
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust, AdmiralKeywords.Catch];
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(10, ValueProp.Move), new PowerVar<VulnerablePower>(1)];

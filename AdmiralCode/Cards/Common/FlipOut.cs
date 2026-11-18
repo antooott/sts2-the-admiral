@@ -7,7 +7,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace Admiral.AdmiralCode.Cards.Common;
 
-public class FlipOut() : AdmiralCard(0, CardType.Attack, CardRarity.Common, TargetType.RandomEnemy)
+public sealed class FlipOut() : AdmiralCard(0, CardType.Attack, CardRarity.Common, TargetType.RandomEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(7, ValueProp.Move)];
     protected override bool HasEnergyCostX => true;

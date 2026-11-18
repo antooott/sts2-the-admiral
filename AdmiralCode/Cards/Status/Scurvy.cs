@@ -11,7 +11,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 namespace Admiral.AdmiralCode.Cards.Status;
 
 [Pool(typeof(StatusCardPool))]
-public class Scurvy() : AdmiralCard(-1, CardType.Status, CardRarity.Status, TargetType.None)
+public sealed class Scurvy() : AdmiralCard(-1, CardType.Status, CardRarity.Status, TargetType.None)
 {
     public override int MaxUpgradeLevel => 0;
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Unplayable];

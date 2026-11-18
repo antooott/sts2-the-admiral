@@ -7,7 +7,7 @@ using MegaCrit.Sts2.Core.Models;
 
 namespace Admiral.AdmiralCode.Cards.Rare;
 
-public class AvianForm() : AdmiralCard(3, CardType.Power, CardRarity.Rare, TargetType.Self)
+public sealed class AvianForm() : AdmiralCard(3, CardType.Power, CardRarity.Rare, TargetType.Self)
 {
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<AvianFormPower>()];
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Ethereal];

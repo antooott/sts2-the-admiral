@@ -13,7 +13,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace Admiral.AdmiralCode.Cards.Token;
 
 [Pool(typeof(TokenCardPool))]
-public class Whale() : AdmiralCard(3, CardType.Skill, CardRarity.Token, TargetType.Self)
+public sealed class Whale() : AdmiralCard(3, CardType.Skill, CardRarity.Token, TargetType.Self)
 {
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust, AdmiralKeywords.Catch];
     protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(60, ValueProp.Move), new DynamicVar(nameof (Blur), 1M)];

@@ -7,7 +7,7 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace Admiral.AdmiralCode.Cards.Uncommon;
 
-public class Lookout() : AdmiralCard(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
+public sealed class Lookout() : AdmiralCard(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new ScryVar(2), new CardsVar(1)];
     protected override void OnUpgrade() => this.DynamicVars.Cards.UpgradeValueBy(1);

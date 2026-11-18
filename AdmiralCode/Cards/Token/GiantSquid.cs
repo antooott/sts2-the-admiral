@@ -14,7 +14,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace Admiral.AdmiralCode.Cards.Token;
 
 [Pool(typeof(TokenCardPool))]
-public class GiantSquid() : AdmiralCard(2, CardType.Attack, CardRarity.Token, TargetType.AllEnemies)
+public sealed class GiantSquid() : AdmiralCard(2, CardType.Attack, CardRarity.Token, TargetType.AllEnemies)
 {
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust, AdmiralKeywords.Catch];
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(20, ValueProp.Move), new PowerVar<WeakPower>(3), new PowerVar<VulnerablePower>(3)];

@@ -11,7 +11,7 @@ using MegaCrit.Sts2.Core.Models.Cards;
 namespace Admiral.AdmiralCode.Cards.Token;
 
 [Pool(typeof(TokenCardPool))]
-public class WetBoot() : AdmiralCard(1, CardType.Skill, CardRarity.Token, TargetType.None)
+public sealed class WetBoot() : AdmiralCard(1, CardType.Skill, CardRarity.Token, TargetType.None)
 {
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust, AdmiralKeywords.Catch];
     protected override void OnUpgrade() => this.EnergyCost.UpgradeBy(-1);

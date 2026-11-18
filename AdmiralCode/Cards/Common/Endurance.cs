@@ -10,7 +10,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace Admiral.AdmiralCode.Cards.Common;
 
-public class Endurance() : AdmiralCard(0, CardType.Skill, CardRarity.Common, TargetType.Self)
+public sealed class Endurance() : AdmiralCard(0, CardType.Skill, CardRarity.Common, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [(DynamicVar) new CalculationBaseVar(0M), (DynamicVar) new CalculationExtraVar(1M), new CalculatedBlockVar(ValueProp.Move).WithMultiplier((Func<CardModel, Creature?, Decimal>) ((card, _) => (Decimal) Math.Max(0, card.Owner.Creature.GetPowerAmount<VigorPower>())))];
     protected override void OnUpgrade() => this.DynamicVars.CalculationBase.UpgradeValueBy(3);
