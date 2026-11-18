@@ -61,7 +61,6 @@
     <ItemGroup>
         <Folder Include="AdmiralCode\Cards\Token\Treasure\Buried\" />
         <Folder Include="AdmiralCode\Cards\Token\Treasure\Commercial\" />
-        <Folder Include="AdmiralCode\Cards\Token\Treasure\Explored\" />
         <Folder Include="AdmiralCode\Cards\Token\Treasure\Occult\" />
         <Folder Include="AdmiralCode\Cards\Token\Treasure\Plundered\" />
         <Folder Include="AdmiralCode\Cards\Token\Treasure\Sunken\" />

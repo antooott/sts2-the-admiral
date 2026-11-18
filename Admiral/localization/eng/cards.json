@@ -90,6 +90,8 @@
   "ADMIRAL-WHALE.title": "Whale",
   "ADMIRAL-GIANT_SQUID.description": "Deal {Damage:diff()} damage to ALL enemies.\\nApply {WeakPower:diff()} [gold]Weak[/gold] and {VulnerablePower:diff()} [gold]Vulnerable[/gold] to ALL enemies.{IfUpgraded:show:\\n[gold]Stun[/gold] every enemy.|}",
   "ADMIRAL-GIANT_SQUID.title": "Giant Squid",
+  "ADMIRAL-SHORTCUT.description": "Draw {Cards:diff()} {Cards:plural:card|cards}.",
+  "ADMIRAL-SHORTCUT.title": "Shortcut",
 
   "ADMIRAL-SCURVY.description": "At the end of your turn, gain {Power:diff()} [gold]Frail[/gold], [gold]Weak[/gold] or [gold]Vulnerable[/gold] at random.",
   "ADMIRAL-SCURVY.title": "Scurvy"
