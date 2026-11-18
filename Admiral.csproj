@@ -59,6 +59,12 @@
     </ItemGroup>
 
     <ItemGroup>
+        <Folder Include="AdmiralCode\Cards\Token\Treasure\Buried\" />
+        <Folder Include="AdmiralCode\Cards\Token\Treasure\Commercial\" />
+        <Folder Include="AdmiralCode\Cards\Token\Treasure\Explored\" />
+        <Folder Include="AdmiralCode\Cards\Token\Treasure\Occult\" />
+        <Folder Include="AdmiralCode\Cards\Token\Treasure\Plundered\" />
+        <Folder Include="AdmiralCode\Cards\Token\Treasure\Sunken\" />
         <Folder Include="Admiral\images\card_portraits\big\"/>
         <Folder Include="Admiral\images\powers\big\"/>
         <Folder Include="Admiral\images\relics\big\"/>
