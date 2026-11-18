@@ -31,8 +31,8 @@ public class Scurvy() : AdmiralCard(-1, CardType.Status, CardRarity.Status, Targ
                 powerModelFrail.SkipNextDurationTick = true;
                 break;
             case 1:
-                bool alreadyHasWeak = this.Owner.Creature.HasPower<VulnerablePower>();
-                PowerModel? powerModelWeak = (PowerModel?) await PowerCmd.Apply<VulnerablePower>(choiceContext, this.Owner.Creature, this.DynamicVars["Power"].BaseValue, null, (CardModel) this);
+                bool alreadyHasWeak = this.Owner.Creature.HasPower<WeakPower>();
+                PowerModel? powerModelWeak = (PowerModel?) await PowerCmd.Apply<WeakPower>(choiceContext, this.Owner.Creature, this.DynamicVars["Power"].BaseValue, null, (CardModel) this);
                 if (powerModelWeak == null || alreadyHasWeak)
                     return;
                 powerModelWeak.SkipNextDurationTick = true;
