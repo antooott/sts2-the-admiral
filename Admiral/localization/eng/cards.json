@@ -99,7 +99,7 @@
   "ADMIRAL-BORROWED_POWDER.description": "[gold]Load[/gold] {Load:diff()}.",
   "ADMIRAL-BORROWED_POWDER.title": "\"Borrowed\" Powder",
   "ADMIRAL-BOARDS_AND_NAILS.description": "Gain {Block:diff()} [gold]Block[/gold].\\nAt the start of your next turn, gain {Block:diff()} [gold]Block[/gold].",
-  "ADMIRAL-BOARDS_AND_NAILS.title": "Board sand Nails",
+  "ADMIRAL-BOARDS_AND_NAILS.title": "Boards and Nails",
   "ADMIRAL-POWDER_KEG.description": "[gold]Load[/gold] {Load:diff()}.",
   "ADMIRAL-POWDER_KEG.title": "Powder Keg",
   "ADMIRAL-MAZALETH_FEATHER.description": "Gain {Block:diff()} [gold]Block[/gold]. Gain {RitualPower:diff()} [gold]Ritual[/gold].",
