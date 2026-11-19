@@ -14,6 +14,7 @@ namespace Admiral.AdmiralCode.Cards.Uncommon.Attack;
 
 public sealed class DesperateStrike() : AdmiralCard(1, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
 {
+    protected override HashSet<CardTag> CanonicalTags => [CardTag.Strike];
    protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar(8, ValueProp.Move),
         new CalculationBaseVar(0M),
