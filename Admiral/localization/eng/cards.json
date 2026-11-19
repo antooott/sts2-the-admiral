@@ -96,6 +96,8 @@
   "ADMIRAL-SHORTCUT.title": "Shortcut",
   "ADMIRAL-FLORA.description": "Deal {Damage:diff()} damage.\\nApply {ConstrictPower:diff()} [gold]Constrict[/gold].",
   "ADMIRAL-FLORA.title": "Flora",
+  "ADMIRAL-BORROWED_POWDER.description": "[gold]Load[/gold] {Load:diff()}.",
+  "ADMIRAL-BORROWED_POWDER.title": "\"Borrowed\" Powder",
 
   "ADMIRAL-SCURVY.description": "At the end of your turn, gain {Power:diff()} [gold]Frail[/gold], [gold]Weak[/gold] or [gold]Vulnerable[/gold] at random.",
   "ADMIRAL-SCURVY.title": "Scurvy"
