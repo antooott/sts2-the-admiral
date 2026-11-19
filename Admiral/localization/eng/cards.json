@@ -110,6 +110,8 @@
   "ADMIRAL-PROVISIONS.title": "Provisions",
   "ADMIRAL-FRUIT_FRUITION.description": "Exhaust {IfUpgraded:show:1 random [gold]Scurvy[/gold]|ALL [gold]Scurvies[/gold]} in your Hand.",
   "ADMIRAL-FRUIT_FRUITION.title": "Fruit Fruition",
+  "ADMIRAL-RESTOLEN_GOODS.description": "Choose 1 of 3 random Cards from another character to add into your [gold]Hand[/gold]. It's free to play this turn.",
+  "ADMIRAL-RESTOLEN_GOODS.title": "Restolen Goods",
 
   "ADMIRAL-SCURVY.description": "At the end of your turn, gain {Power:diff()} [gold]Frail[/gold], [gold]Weak[/gold] or [gold]Vulnerable[/gold] at random.",
   "ADMIRAL-SCURVY.title": "Scurvy"
