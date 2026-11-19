@@ -13,7 +13,7 @@ namespace Admiral.AdmiralCode.Cards.Token.Treasure.Commercial;
 public sealed class Provisions() : AdmiralCard(1, CardType.Skill, CardRarity.Token, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
-        [new HealVar(1), new BlockVar(2, ValueProp.Move), new CardsVar(1)];
+        [new HealVar(1), new BlockVar(3, ValueProp.Move), new CardsVar(1)];
 
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust, AdmiralKeywords.Treasure];
 
