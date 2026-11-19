@@ -108,8 +108,9 @@
   "ADMIRAL-ARMS.title": "Arms",
   "ADMIRAL-PROVISIONS.description": "Heal {Heal:diff()} HP.\\nGain {Block:diff()} [gold]Block[/gold].\\nDraw {Cards:diff()} {Cards:plural:card|cards}.",
   "ADMIRAL-PROVISIONS.title": "Provisions",
+  "ADMIRAL-FRUIT_FRUITION.description": "Exhaust {IfUpgraded:show:1 random [gold]Scurvy[/gold]|ALL [gold]Scurvies[/gold]} in your Hand.",
+  "ADMIRAL-FRUIT_FRUITION.title": "Fruit Fruition",
 
   "ADMIRAL-SCURVY.description": "At the end of your turn, gain {Power:diff()} [gold]Frail[/gold], [gold]Weak[/gold] or [gold]Vulnerable[/gold] at random.",
   "ADMIRAL-SCURVY.title": "Scurvy"
-  
 }
