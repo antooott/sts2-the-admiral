@@ -45,6 +45,8 @@
   "ADMIRAL-FRONTLOAD.title": "Frontload",
   "ADMIRAL-PROTECT_THE_LOOT.description": "Deal {Damage:diff()} damage.\\nIf you have played a [gold]Treasure[/gold] card this combat, gain {Block:diff()} [gold]Block[/gold].",
   "ADMIRAL-PROTECT_THE_LOOT.title": "Protect the Loot!",
+  "ADMIRAL-TRADE_PORT.description": "[gold]Exhaust[/gold] a card.\\nAdd an amount of [gold]Commercial Treasure[/gold] equal to its cost to your Hand.",
+  "ADMIRAL-TRADE_PORT.title": "Trade Port",
   
   "ADMIRAL-WIDE_SWING.description": "Deal {Damage:diff()} damage.",
   "ADMIRAL-WIDE_SWING.title": "Wide Swing",
