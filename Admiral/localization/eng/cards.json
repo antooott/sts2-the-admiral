@@ -60,6 +60,8 @@
   "ADMIRAL-SLICE_TWICE.title": "Slice Twice",
   "ADMIRAL-EXPEDITION.description": "Draw {Cards:diff()} {Cards:plural:card|cards}.\\nAdd 1 [gold]Explored Treasure[/gold] to your [gold]Hand[/gold].",
   "ADMIRAL-EXPEDITION.title": "Expedition",
+  "ADMIRAL-DESPERATE_STRIKE.description": "Deal {Damage:diff()} damage for each [gold]Scurvy[/gold] you created this combat.{InCombat:\\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
+  "ADMIRAL-DESPERATE_STRIKE.title": "Desperate Strike",
 
   "ADMIRAL-DRAG_UNDER.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold].\\nThe next Attack you play deals {IfUpgraded:show:triple|double} damage and applies [gold]Doom[/gold] equal to damage dealt.",
   "ADMIRAL-DRAG_UNDER.title": "Drag Under",
