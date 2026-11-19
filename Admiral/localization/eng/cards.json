@@ -71,6 +71,8 @@
   "ADMIRAL-FRAGBOMB.title": "Fragbomb",
   "ADMIRAL-DUST_OFF_THE_ANTIQUITIES.description": "Play ALL [gold]Treasure[/gold] cards in your [gold]Exhaust Pile[/gold].",
   "ADMIRAL-DUST_OFF_THE_ANTIQUITIES.title": "Dust off the Antiquities",
+  "ADMIRAL-AUGURY.description": "Scry {Scry:diff()}.\\nAdd 1 [gold]Occult Treasure[/gold] to your [gold]Hand[/gold].",
+  "ADMIRAL-AUGURY.title": "Augury",
 
   "ADMIRAL-WET_BOOT.description": "Aw, dang it.",
   "ADMIRAL-WET_BOOT.title": "Wet Boot",
