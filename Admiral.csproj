@@ -60,7 +60,6 @@
 
     <ItemGroup>
         <Folder Include="AdmiralCode\Cards\Token\Treasure\Buried\" />
-        <Folder Include="AdmiralCode\Cards\Token\Treasure\Occult\" />
         <Folder Include="AdmiralCode\Cards\Token\Treasure\Sunken\" />
         <Folder Include="Admiral\images\card_portraits\big\"/>
         <Folder Include="Admiral\images\powers\big\"/>

@@ -102,6 +102,8 @@
   "ADMIRAL-BOARDS_AND_NAILS.title": "Board sand Nails",
   "ADMIRAL-POWDER_KEG.description": "[gold]Load[/gold] {Load:diff()}.",
   "ADMIRAL-POWDER_KEG.title": "Powder Keg",
+  "ADMIRAL-MAZALETH_FEATHER.description": "Gain {Block:diff()} [gold]Block[/gold]. Gain {RitualPower:diff()} [gold]Ritual[/gold].",
+  "ADMIRAL-MAZALETH_FEATHER.title": "Mazaleth Feather",
 
   "ADMIRAL-SCURVY.description": "At the end of your turn, gain {Power:diff()} [gold]Frail[/gold], [gold]Weak[/gold] or [gold]Vulnerable[/gold] at random.",
   "ADMIRAL-SCURVY.title": "Scurvy"
