@@ -104,6 +104,8 @@
   "ADMIRAL-POWDER_KEG.title": "Powder Keg",
   "ADMIRAL-MAZALETH_FEATHER.description": "Gain {Block:diff()} [gold]Block[/gold]. Gain {RitualPower:diff()} [gold]Ritual[/gold].",
   "ADMIRAL-MAZALETH_FEATHER.title": "Mazaleth Feather",
+  "ADMIRAL-ARMS.description": "Play X random Attacks from your [gold]Draw Pile[/gold].",
+  "ADMIRAL-ARMS.title": "Arms",
 
   "ADMIRAL-SCURVY.description": "At the end of your turn, gain {Power:diff()} [gold]Frail[/gold], [gold]Weak[/gold] or [gold]Vulnerable[/gold] at random.",
   "ADMIRAL-SCURVY.title": "Scurvy"
