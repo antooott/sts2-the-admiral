@@ -98,6 +98,8 @@
   "ADMIRAL-FLORA.title": "Flora",
   "ADMIRAL-BORROWED_POWDER.description": "[gold]Load[/gold] {Load:diff()}.",
   "ADMIRAL-BORROWED_POWDER.title": "\"Borrowed\" Powder",
+  "ADMIRAL-BOARDS_AND_NAILS.description": "Gain {Block:diff()} [gold]Block[/gold].\\nAt the start of your next turn, gain {Block:diff()} [gold]Block[/gold].",
+  "ADMIRAL-BOARDS_AND_NAILS.title": "Board sand Nails",
 
   "ADMIRAL-SCURVY.description": "At the end of your turn, gain {Power:diff()} [gold]Frail[/gold], [gold]Weak[/gold] or [gold]Vulnerable[/gold] at random.",
   "ADMIRAL-SCURVY.title": "Scurvy"
