@@ -41,6 +41,8 @@
   "ADMIRAL-PRESS_THE_ATTACK.title": "Press the Attack",
   "ADMIRAL-RECOVERY.description": "Add {TreasureVar:diff()} random {TreasureVar:plural:[gold]Sunken Treasure[/gold]|[gold]Sunken Treasures[/gold]} to your [gold]Hand[/gold].",
   "ADMIRAL-RECOVERY.title": "Recovery",
+  "ADMIRAL-FRONTLOAD.description": "Deal {Damage:diff()} damage to the leftmost enemy.\\nGain {Energy:energyIcons()}.",
+  "ADMIRAL-FRONTLOAD.title": "Frontload",
   
   "ADMIRAL-WIDE_SWING.description": "Deal {Damage:diff()} damage.",
   "ADMIRAL-WIDE_SWING.title": "Wide Swing",
