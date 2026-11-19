@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace Admiral.AdmiralCode.Cards.Uncommon.Attack;
 
-public sealed class SliceTwice() : AdmiralCard(1, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
+public sealed class SliceTwice() : AdmiralCard(0, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(7, ValueProp.Move)];
     protected override void OnUpgrade() => this.DynamicVars.Damage.UpgradeValueBy(2);
