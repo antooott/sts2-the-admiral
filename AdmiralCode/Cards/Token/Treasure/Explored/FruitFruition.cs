@@ -19,7 +19,7 @@ public sealed class FruitFruition() : AdmiralCard(0, CardType.Skill, CardRarity.
     {
         if (this.IsUpgraded)
         {
-            List<CardModel> list1 = PileType.Hand.GetPile(this.Owner).Cards.Where<CardModel>((Func<CardModel, bool>) (c => c.Title == "Scurvy")).ToList<CardModel>();
+            List<CardModel> list1 = PileType.Hand.GetPile(this.Owner).Cards.Where<CardModel>((Func<CardModel, bool>) (c => c.Title == "Scurvy" && c.Rarity == CardRarity.Token)).ToList<CardModel>();
             foreach (CardModel card in list1)
             {
                 await CardCmd.Exhaust(choiceContext, card);
