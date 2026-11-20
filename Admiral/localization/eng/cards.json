@@ -83,6 +83,8 @@
   "ADMIRAL-DUST_OFF_THE_ANTIQUITIES.title": "Dust off the Antiquities",
   "ADMIRAL-AUGURY.description": "Scry {Scry:diff()}.\\nAdd 1 [gold]Occult Treasure[/gold] to your [gold]Hand[/gold].",
   "ADMIRAL-AUGURY.title": "Augury",
+  "ADMIRAL-UNLOAD.description": "[gold]Load[/gold] {Load:diff()}.\\n[gold]Fire[/gold] all your [gold]Cannon Shots[/gold].",
+  "ADMIRAL-UNLOAD.title": "Unload",
 
   "ADMIRAL-WET_BOOT.description": "Aw, dang it.",
   "ADMIRAL-WET_BOOT.title": "Wet Boot",
