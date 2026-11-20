@@ -136,6 +136,8 @@
   "ADMIRAL-FRUIT_FRUITION.title": "Fruit Fruition",
   "ADMIRAL-RESTOLEN_GOODS.description": "Choose 1 of 3 random Cards from another character to add into your [gold]Hand[/gold]. It's free to play this turn.",
   "ADMIRAL-RESTOLEN_GOODS.title": "Restolen Goods",
+  "ADMIRAL-SHINY_BADGE.description": "Gain {DexterityPower:diff()} [gold]Dexterity[/gold] this turn.",
+  "ADMIRAL-SHINY_BADGE.title": "Shiny Badge",
 
   "ADMIRAL-SCURVY.description": "At the end of your turn, gain {Power:diff()} [gold]Frail[/gold], [gold]Weak[/gold] or [gold]Vulnerable[/gold] at random.",
   "ADMIRAL-SCURVY.title": "Scurvy"
