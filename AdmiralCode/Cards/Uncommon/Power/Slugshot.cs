@@ -3,11 +3,10 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
-using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace Admiral.AdmiralCode.Cards.Uncommon.Power;
 
-public class Slughshot() : AdmiralCard(1, CardType.Power, CardRarity.Uncommon, TargetType.Self)
+public class Slugshot() : AdmiralCard(1, CardType.Power, CardRarity.Uncommon, TargetType.Self)
 {
     protected override void OnUpgrade() => this.EnergyCost.UpgradeBy(-1);
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<CannonPower>()];
