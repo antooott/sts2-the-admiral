@@ -15,7 +15,7 @@ namespace Admiral.AdmiralCode.Monsters;
 
 public sealed class Cannon : MonsterModel, ICustomModel
 {
-  private readonly int _blastDamage = 15;
+  private readonly Decimal _baseBlastDamage = 15;
   public static Vector2 MinOffset => new Vector2(150f, -75f);
   public static Vector2 MaxOffset => new Vector2(250f, -75f);
   public static Vector2 ScaleRange => new Vector2(1f, 2f);
@@ -50,7 +50,7 @@ public sealed class Cannon : MonsterModel, ICustomModel
   
   private async Task FireMove(IReadOnlyList<Creature> targets)
   {
-    await DamageCmd.Attack((Decimal) _blastDamage)
+    await DamageCmd.Attack((Decimal) _baseBlastDamage + this.Creature.PetOwner!.Creature.GetPowerAmount<BiggerRoundsPower>())
       .FromMonster((MonsterModel) this)
       .TargetingFiltered(targets)
       .WithAttackerAnim("Attack", 0.2f) // no
