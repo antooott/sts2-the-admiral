@@ -39,8 +39,8 @@ public sealed class Cannon : MonsterModel, ICustomModel
   {
     if (!this.Creature.IsAlive || this.Creature.PetOwner == null)
       return;
-    await CreatureCmd.SetMaxHp(this.Creature, 3);
-    await CreatureCmd.Heal(this.Creature, 3);
+    if (this.Creature.CurrentHp < 3)
+      await CreatureCmd.Heal(this.Creature, 3);
     if (player.Creature.CombatState!.Enemies.FirstOrDefault(c => c.IsAlive) != null &&
         this.Creature.HasPower<GunpowderPower>())
     {
