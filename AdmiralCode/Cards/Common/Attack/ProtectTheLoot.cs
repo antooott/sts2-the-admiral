@@ -15,8 +15,7 @@ public sealed class ProtectTheLoot() : AdmiralCard(1, CardType.Attack, CardRarit
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(7, ValueProp.Move), new BlockVar(5, ValueProp.Move)];
     protected override void OnUpgrade() => this.DynamicVars.Damage.UpgradeValueBy(3);
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromKeyword(AdmiralKeywords.Treasure)];
-    // surely theres a better way
-    private bool HasPlayedTreasureThisCombat => CombatManager.Instance.History.Entries.OfType<CardPlayFinishedEntry>().Count<CardPlayFinishedEntry>((Func<CardPlayFinishedEntry, bool>) (c => c.CardPlay.Player == this.Owner && c.CardPlay.Card.Keywords.Contains(AdmiralKeywords.Treasure))) > 0;
+    private bool HasPlayedTreasureThisCombat => CombatManager.Instance.History.Entries.OfType<CardPlayFinishedEntry>().Any(c => c.CardPlay.Player == this.Owner && c.CardPlay.Card.Keywords.Contains(AdmiralKeywords.Treasure));
     protected override bool ShouldGlowGoldInternal => HasPlayedTreasureThisCombat;
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
