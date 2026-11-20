@@ -11,7 +11,7 @@ public class EndlessBarragePower() : AdmiralPower
     public override PowerStackType StackType => PowerStackType.Counter;
     public override async Task AfterPlayerTurnStartEarly(PlayerChoiceContext choiceContext, Player player)
     {
-        if (this.Owner.Player != null)
+        if (this.Owner.Player != null && player == this.Owner.Player)
             await AdmiralCmd.LoadCannon(choiceContext, this.Owner.Player, this, this.Amount);
     }
 }
