@@ -34,5 +34,8 @@
   "ADMIRAL-BIGGER_ROUNDS_POWER.title": "Bigger Rounds",
   "ADMIRAL-ENDLESS_BARRAGE_POWER.description": "At the start of your turn, [gold]Load[/gold].",
   "ADMIRAL-ENDLESS_BARRAGE_POWER.smartDescription": "At the start of your turn, [gold]Load[/gold] {Amount:abs()}.",
-  "ADMIRAL-ENDLESS_BARRAGE_POWER.title": "Endless Barrage"
+  "ADMIRAL-ENDLESS_BARRAGE_POWER.title": "Endless Barrage",
+  "ADMIRAL-SLUGSHOT_POWER.description": "Your [gold]Cannon Fire[/gold] breaks enemy [gold]Block[/gold].",
+  "ADMIRAL-SLUGSHOT_POWER.smartDescription": "Your [gold]Cannon Fire[/gold] breaks enemy [gold]Block[/gold].",
+  "ADMIRAL-SLUGSHOT_POWER.title": "Slugshot"
 }

@@ -74,6 +74,8 @@
   "ADMIRAL-FRESH_FOUND_RATION.title": "Fresh-found Ration",
   "ADMIRAL-TREASURE_MAP.description": "Choose 1 of 3 cards in your [gold]Draw Pile[/gold] to add into your [gold]Hand[/gold].\\nAdd 1 [gold]Explored Treasure[/gold] to your [gold]Hand[/gold].",
   "ADMIRAL-TREASURE_MAP.title": "Treasure Map",
+  "ADMIRAL-SLUGHSHOT.description": "Your [gold]Cannon Fire[/gold] breaks enemy [gold]Block[/gold]",
+  "ADMIRAL-SLUGHSHOT.title": "Slughshot",
 
   "ADMIRAL-DRAG_UNDER.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold].\\nThe next Attack you play deals {IfUpgraded:show:triple|double} damage and applies [gold]Doom[/gold] equal to damage dealt.",
   "ADMIRAL-DRAG_UNDER.title": "Drag Under",
