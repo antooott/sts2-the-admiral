@@ -16,10 +16,6 @@ namespace Admiral.AdmiralCode.Monsters;
 public sealed class Cannon : MonsterModel, ICustomModel
 {
   private readonly int _blastDamage = 15;
-  private bool HasGunPowder
-  {
-    get => this.IsMutable && this.Creature.HasPower<GunpowderPower>();
-  }
   public static Vector2 MinOffset => new Vector2(150f, -75f);
   public static Vector2 MaxOffset => new Vector2(250f, -75f);
   public static Vector2 ScaleRange => new Vector2(1f, 2f);
