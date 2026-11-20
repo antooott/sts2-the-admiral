@@ -45,6 +45,7 @@ public sealed class Cannon : MonsterModel, ICustomModel
         await CreatureCmd.LoseBlock(choiceContext, target, (Decimal) target.Block, this.Creature);
       for (int i = this.Creature.GetPowerAmount<GunpowderPower>(); i > 0; --i)
       {
+        targets = this.Creature.PetOwner!.HasPower<FragbombPower>() ? player.Creature.CombatState!.Enemies : [player.Creature.CombatState!.Enemies.FirstOrDefault(c => c.IsAlive)!];
         await FireMove(targets);
       }
     }
