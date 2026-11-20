@@ -70,6 +70,8 @@
   "ADMIRAL-BIGGER_ROUNDS.title": "Bigger Rounds",
   "ADMIRAL-BOARD_SHIP.description": "Deal {Damage:diff()} damage.\\nAdd 1 [gold]Plundered Treasure[/gold] to your [gold]Hand[/gold].",
   "ADMIRAL-BOARD_SHIP.title": "Board Ship",
+  "ADMIRAL-FRESH_FOUND_RATION.description": "Deal {Damage:diff()} damage. If [gold]Fatal[/gold], Heal {Heal:diff()} HP.",
+  "ADMIRAL-FRESH_FOUND_RATION.title": "Fresh-found Ration",
 
   "ADMIRAL-DRAG_UNDER.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold].\\nThe next Attack you play deals {IfUpgraded:show:triple|double} damage and applies [gold]Doom[/gold] equal to damage dealt.",
   "ADMIRAL-DRAG_UNDER.title": "Drag Under",
