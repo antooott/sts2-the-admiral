@@ -12,7 +12,7 @@ public class PaddedArmor() : AdmiralCard(2, CardType.Power, CardRarity.Uncommon,
     protected override void OnUpgrade() => this.EnergyCost.UpgradeBy(-1);
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        await PowerCmd.Apply<BiggerRoundsPower>(choiceContext, Owner.Creature,
+        await PowerCmd.Apply<PaddedArmorPower>(choiceContext, Owner.Creature,
             DynamicVars["PaddedArmorPower"].IntValue, Owner.Creature, this);
     }
 }
