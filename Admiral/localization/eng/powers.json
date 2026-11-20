@@ -37,5 +37,8 @@
   "ADMIRAL-ENDLESS_BARRAGE_POWER.title": "Endless Barrage",
   "ADMIRAL-SLUGSHOT_POWER.description": "Your [gold]Cannon Fire[/gold] breaks enemy [gold]Block[/gold].",
   "ADMIRAL-SLUGSHOT_POWER.smartDescription": "Your [gold]Cannon Fire[/gold] breaks enemy [gold]Block[/gold].",
-  "ADMIRAL-SLUGSHOT_POWER.title": "Slugshot"
+  "ADMIRAL-SLUGSHOT_POWER.title": "Slugshot",
+  "ADMIRAL-PADDED_ARMOR_POWER.description": "At the start of your turn, gain [gold]Block[/gold] equal to the amount.",
+  "ADMIRAL-PADDED_ARMOR_POWER.smartDescription": "At the start of your turn, gain {Amount:abs} [gold]Block[/gold].",
+  "ADMIRAL-PADDED_ARMOR_POWER.title": "Padded Armor"
 }
