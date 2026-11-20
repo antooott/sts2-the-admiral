@@ -138,6 +138,8 @@
   "ADMIRAL-RESTOLEN_GOODS.title": "Restolen Goods",
   "ADMIRAL-SHINY_BADGE.description": "Gain {DexterityPower:diff()} [gold]Dexterity[/gold] this turn.",
   "ADMIRAL-SHINY_BADGE.title": "Shiny Badge",
+  "ADMIRAL-DOUBLOONS.description": "Gain {Energy:energyIcons()}.",
+  "ADMIRAL-DOUBLOONS.title": "Doubloons",
 
   "ADMIRAL-SCURVY.description": "At the end of your turn, gain {Power:diff()} [gold]Frail[/gold], [gold]Weak[/gold] or [gold]Vulnerable[/gold] at random.",
   "ADMIRAL-SCURVY.title": "Scurvy"
