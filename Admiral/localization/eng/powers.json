@@ -31,5 +31,8 @@
   "ADMIRAL-FRAGBOMB_POWER.title": "Fragbomb",
   "ADMIRAL-BIGGER_ROUNDS_POWER.description": "Bigger Rounds adds additional damage to [gold]Cannon Fire[/gold].",
   "ADMIRAL-BIGGER_ROUNDS_POWER.smartDescription": "{Amount:cond:<0?Decreases|Increases} [gold]Cannon Fire[/gold] damage by [blue]{Amount:abs()}[/blue].",
-  "ADMIRAL-BIGGER_ROUNDS_POWER.title": "Bigger Rounds"
+  "ADMIRAL-BIGGER_ROUNDS_POWER.title": "Bigger Rounds",
+  "ADMIRAL-ENDLESS_BARRAGE_POWER.description": "At the start of your turn, [gold]Load[/gold].",
+  "ADMIRAL-ENDLESS_BARRAGE_POWER.smartDescription": "At the start of your turn, [gold]Load[/gold] {Amount:abs()}.",
+  "ADMIRAL-ENDLESS_BARRAGE_POWER.title": "Endless Barrage"
 }
