@@ -12,8 +12,4 @@ public sealed class GunpowderPower : AdmiralPower
     public override PowerType Type => PowerType.Buff;
     public override PowerStackType StackType => PowerStackType.Counter;
     public override Color AmountLabelColor => PowerModel._normalAmountLabelColor;
-    public override async Task AfterPlayerTurnStartLate(PlayerChoiceContext choiceContext, Player player)
-    {
-        await PowerCmd.Remove(this);
-    }
 }

@@ -43,7 +43,7 @@ public sealed class Cannon : MonsterModel, ICustomModel
       IReadOnlyList<Creature> targets = this.Creature.PetOwner!.HasPower<FragbombPower>() ? player.Creature.CombatState!.Enemies : [player.Creature.CombatState!.Enemies.FirstOrDefault(c => c.IsAlive)!];
       foreach  (Creature target in targets)
         await CreatureCmd.LoseBlock(choiceContext, target, (Decimal) target.Block, this.Creature);
-      for (int i = this.Creature.GetPowerAmount<GunpowderPower>(); i > 0; --i)
+      while (this.Creature.HasPower<GunpowderPower>())
       {
         targets = this.Creature.PetOwner!.HasPower<FragbombPower>() ? player.Creature.CombatState!.Enemies : [player.Creature.CombatState!.Enemies.FirstOrDefault(c => c.IsAlive)!];
         await FireMove(targets);
@@ -61,5 +61,6 @@ public sealed class Cannon : MonsterModel, ICustomModel
       .WithHitFx("vfx/vfx_attack_slash") // no
       .Unpowered()
       .Execute(null);
+    await PowerCmd.Decrement(this.Creature.GetPower<GunpowderPower>()!);
   }
 }
