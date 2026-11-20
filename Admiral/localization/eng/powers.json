@@ -40,5 +40,8 @@
   "ADMIRAL-SLUGSHOT_POWER.title": "Slugshot",
   "ADMIRAL-PADDED_ARMOR_POWER.description": "At the start of your turn, gain [gold]Block[/gold] equal to the amount.",
   "ADMIRAL-PADDED_ARMOR_POWER.smartDescription": "At the start of your turn, gain {Amount:abs} [gold]Block[/gold].",
-  "ADMIRAL-PADDED_ARMOR_POWER.title": "Padded Armor"
+  "ADMIRAL-PADDED_ARMOR_POWER.title": "Padded Armor",
+  "ADMIRAL-STEADY_FLOW_POWER.description": "At the start of your turn, gain [gold]Vigor[/gold] equal to the amount.",
+  "ADMIRAL-STEADY_FLOW_POWER.smartDescription": "\"At the start of your turn, gain {Amount:abs} [gold]Vigor[/gold].",
+  "ADMIRAL-STEADY_FLOW_POWER.title": "Steady Flow"
 }

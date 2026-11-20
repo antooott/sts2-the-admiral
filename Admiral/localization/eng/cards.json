@@ -76,8 +76,10 @@
   "ADMIRAL-TREASURE_MAP.title": "Treasure Map",
   "ADMIRAL-SLUGSHOT.description": "Your [gold]Cannon Fire[/gold] breaks enemy [gold]Block[/gold].",
   "ADMIRAL-SLUGSHOT.title": "Slugshot",
-  "ADMIRAL-PADDED_ARMOR.description": "At the start of your turn, gain {Block:diff()} [gold]Block[/gold].",
+  "ADMIRAL-PADDED_ARMOR.description": "At the start of your turn, gain {PadddedArmorPower:diff()} [gold]Block[/gold].",
   "ADMIRAL-PADDED_ARMOR.title": "Padded Armor",
+  "ADMIRAL-STEADY_FLOW.description": "At the start of your turn, gain {SteadyFlowPower:diff()} [gold]Vigor[/gold].",
+  "ADMIRAL-STEADY_FLOW.title": "SteadyF low",
 
   "ADMIRAL-DRAG_UNDER.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold].\\nThe next Attack you play deals {IfUpgraded:show:triple|double} damage and applies [gold]Doom[/gold] equal to damage dealt.",
   "ADMIRAL-DRAG_UNDER.title": "Drag Under",
