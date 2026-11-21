@@ -146,6 +146,8 @@
   "ADMIRAL-DOUBLOONS.title": "Doubloons",
   "ADMIRAL-RHYSTIC_SCIMITAR.description": "Deal {Damage:diff()} damage twice.\\nGain {VigorPower:diff()} [gold]Vigor[/gold].",
   "ADMIRAL-RHYSTIC_SCIMITAR.title": "Rhystic Scimitar",
+  "ADMIRAL-OLD_RUM.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold].",
+  "ADMIRAL-OLD_RUM.title": "Old Rum",
 
   "ADMIRAL-SCURVY.description": "At the end of your turn, gain {Power:diff()} [gold]Frail[/gold], [gold]Weak[/gold] or [gold]Vulnerable[/gold] at random.",
   "ADMIRAL-SCURVY.title": "Scurvy"
