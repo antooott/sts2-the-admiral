@@ -11,7 +11,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 namespace Admiral.AdmiralCode.Cards.Token.Treasure.Buried;
 
 [Pool(typeof(TokenCardPool))]
-public class OldRum() : AdmiralCard(0, CardType.Skill, CardRarity.Token, TargetType.Self)
+public class OldRum() : AdmiralCard(1, CardType.Skill, CardRarity.Token, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<VigorPower>(10)];
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust, AdmiralKeywords.Treasure];
