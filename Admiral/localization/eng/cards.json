@@ -152,6 +152,8 @@
   "ADMIRAL-GIANT_SHELL.title": "Giant Shell",
   "ADMIRAL-SNECKO_FANG.description": "Deal {Damage:diff()} damage.\\nDraw {Cards:diff()} cards.\\nRandomize the cost of cards in your [gold]Hand[/gold] this turn. ",
   "ADMIRAL-SNECKO_FANG.title": "Snecko Fang",
+  "ADMIRAL-HEXATORCH.description": "Apply {BurnPower:diff()} [gold]Burn[/gold] 6 times.",
+  "ADMIRAL-HEXATORCH.title": "Hexatorch",
 
   "ADMIRAL-SCURVY.description": "At the end of your turn, gain {Power:diff()} [gold]Frail[/gold], [gold]Weak[/gold] or [gold]Vulnerable[/gold] at random.",
   "ADMIRAL-SCURVY.title": "Scurvy"

@@ -43,5 +43,8 @@
   "ADMIRAL-PADDED_ARMOR_POWER.title": "Padded Armor",
   "ADMIRAL-STEADY_FLOW_POWER.description": "At the start of your turn, gain [gold]Vigor[/gold] equal to the amount.",
   "ADMIRAL-STEADY_FLOW_POWER.smartDescription": "At the start of your turn, gain {Amount:abs()} [gold]Vigor[/gold].",
-  "ADMIRAL-STEADY_FLOW_POWER.title": "Steady Flow"
+  "ADMIRAL-STEADY_FLOW_POWER.title": "Steady Flow",
+  "ADMIRAL-BURN_POWER.description": "Take damage equal to this amount at the start of turn.",
+  "ADMIRAL-BURN_POWER.smartDescription": "Take damage equal to this amount at the start of turn.",
+  "ADMIRAL-BURN_POWER.title": "Burn"
 }
