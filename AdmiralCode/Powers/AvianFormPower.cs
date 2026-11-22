@@ -30,6 +30,8 @@ public class AvianFormPower() : AdmiralPower, IMaxHandSizeModifier
     
     public int ModifyMaxHandSize(Player player, int currentMaxHandSize)
     {
+        if (this.Owner.Player == player)
+            return currentMaxHandSize;
         return (int) Math.Max(Math.Floor(currentMaxHandSize*0.5), 1);
     }
 }
