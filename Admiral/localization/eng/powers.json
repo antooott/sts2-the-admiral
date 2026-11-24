@@ -49,5 +49,8 @@
   "ADMIRAL-BURN_POWER.title": "Burn",
   "ADMIRAL-HAPPY_FEET_POWER.description": "Your next attack this turn regains any [gold]Vigor[/gold] spent.",
   "ADMIRAL-HAPPY_FEET_POWER.smartDescription": "Your next {Amount:cond:>1?{Amount:abs()} attacks|attack} this turn {Amount:cond:>1?regain|regains} any [gold]Vigor[/gold] spent.",
-  "ADMIRAL-HAPPY_FEET_POWER.title": "Happy Feet"
+  "ADMIRAL-HAPPY_FEET_POWER.title": "Happy Feet",
+  "ADMIRAL-MOMENTUM_POWER.description": "Whenever you gain [gold]Vigor[/gold], draw 1 card.",
+  "ADMIRAL-MOMENTUM_POWER.smartDescription": "Whenever you gain [gold]Vigor[/gold], draw {Amount:abs()} {Amount:plural:card|cards}.",
+  "ADMIRAL-MOMENTUM_POWER.title": "Momentum"
 }
