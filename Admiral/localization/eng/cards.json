@@ -158,6 +158,8 @@
   "ADMIRAL-SNECKO_FANG.title": "Snecko Fang",
   "ADMIRAL-HEXATORCH.description": "Apply {BurnPower:diff()} [gold]Burn[/gold] 6 times.",
   "ADMIRAL-HEXATORCH.title": "Hexatorch",
+  "ADMIRAL-HIDDEN_JEWEL.description": "A random card without [gold]Replay[/gold] in your [gold]Discard Pile[/gold] gains [gold]Replay[/gold] {Replay:diff()}.",
+  "ADMIRAL-HIDDEN_JEWEL.title": "Hidden Jewel",
 
   "ADMIRAL-SCURVY.description": "At the end of your turn, gain {Power:diff()} [gold]Frail[/gold], [gold]Weak[/gold] or [gold]Vulnerable[/gold] at random.",
   "ADMIRAL-SCURVY.title": "Scurvy"

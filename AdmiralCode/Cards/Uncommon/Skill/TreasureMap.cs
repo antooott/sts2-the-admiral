@@ -18,7 +18,7 @@ public class TreasureMap() : AdmiralCard(1, CardType.Skill, CardRarity.Uncommon,
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("TreasureVar",1)];
     protected override void OnUpgrade() => this.DynamicVars["TreasureVar"].UpgradeValueBy(1);
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromKeyword(AdmiralKeywords.Treasure)];
-    private List<string> _treasurePool = ["Hidden Jewelry", "Doubloons", "Old Rum"];
+    private readonly List<string> _treasurePool = ["Hidden Jewel", "Doubloons", "Old Rum"];
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
