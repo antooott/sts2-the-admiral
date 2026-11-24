@@ -85,6 +85,8 @@
   "ADMIRAL-HAPPY_FEET.title": "Happy Feet",
   "ADMIRAL-MOMENTUM.description": "Whenever you gain [gold]Vigor[/gold], draw 1 card.",
   "ADMIRAL-MOMENTUM.title": "Momentum",
+  "ADMIRAL-ANCHORED.description": "Gain 2 [gold]Dexterity[/gold] X times.",
+  "ADMIRAL-ANCHORED.title": "Anchored",
 
   "ADMIRAL-DRAG_UNDER.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold].\\nThe next Attack you play deals {IfUpgraded:show:triple|double} damage and applies [gold]Doom[/gold] equal to damage dealt.",
   "ADMIRAL-DRAG_UNDER.title": "Drag Under",
