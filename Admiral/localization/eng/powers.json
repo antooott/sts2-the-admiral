@@ -46,5 +46,8 @@
   "ADMIRAL-STEADY_FLOW_POWER.title": "Steady Flow",
   "ADMIRAL-BURN_POWER.description": "Take damage equal to this amount at the start of turn.",
   "ADMIRAL-BURN_POWER.smartDescription": "Take damage equal to this amount at the start of turn.",
-  "ADMIRAL-BURN_POWER.title": "Burn"
+  "ADMIRAL-BURN_POWER.title": "Burn",
+  "ADMIRAL-HAPPY_FEET_POWER.description": "Your next attack this turn regains any [gold]Vigor[/gold] spent.",
+  "ADMIRAL-HAPPY_FEET_POWER.smartDescription": "Your next {Amount:cond:>1?{Amount:abs()} attacks|attack} this turn {Amount:cond:>1?regain|regains} any [gold]Vigor[/gold] spent.",
+  "ADMIRAL-HAPPY_FEET_POWER.title": "Happy Feet"
 }
