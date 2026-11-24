@@ -15,7 +15,7 @@ namespace Admiral.AdmiralCode.Cards.Uncommon.Skill;
 public class TreasureMap() : AdmiralCard(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
 {
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("TreasureVar",1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("TreasureVar",1), new CardsVar(3)];
     protected override void OnUpgrade() => this.DynamicVars["TreasureVar"].UpgradeValueBy(1);
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromKeyword(AdmiralKeywords.Treasure)];
     private readonly List<string> _treasurePool = ["Hidden Jewel", "Doubloons", "Old Rum"];
