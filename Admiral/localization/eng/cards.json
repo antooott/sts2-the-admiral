@@ -89,6 +89,8 @@
   "ADMIRAL-ANCHORED.title": "Anchored",
   "ADMIRAL-STACKED.description": "Deal {CalculationBase:diff()} damage.\\nDeals {ExtraDamage:diff()} additional damage for each [gold]Treasure[/gold] or [gold]Catch[/gold] in your [gold]Exhaust Pile[/gold].{InCombat:\\n(Deals {CalculatedDamage:diff()} damage)|}",
   "ADMIRAL-STACKED.title": "Stacked!",
+  "ADMIRAL-TAKE_COVER.description": "Gain {Block:diff()} [gold]Block[/gold] for each enemy attacking you.\\n [gold]Load[/gold] {Load:diff()}.",
+  "ADMIRAL-TAKE_COVER.title": "Take Cover",
 
   "ADMIRAL-DRAG_UNDER.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold].\\nThe next Attack you play deals {IfUpgraded:show:triple|double} damage and applies [gold]Doom[/gold] equal to damage dealt.",
   "ADMIRAL-DRAG_UNDER.title": "Drag Under",
