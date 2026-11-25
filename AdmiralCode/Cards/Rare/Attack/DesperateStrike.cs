@@ -10,9 +10,9 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
 
-namespace Admiral.AdmiralCode.Cards.Uncommon.Attack;
+namespace Admiral.AdmiralCode.Cards.Rare.Attack;
 
-public sealed class DesperateStrike() : AdmiralCard(1, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
+public sealed class DesperateStrike() : AdmiralCard(1, CardType.Attack, CardRarity.Rare, TargetType.AnyEnemy)
 {
     protected override HashSet<CardTag> CanonicalTags => [CardTag.Strike];
    protected override IEnumerable<DynamicVar> CanonicalVars => [

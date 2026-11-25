@@ -64,8 +64,6 @@
   "ADMIRAL-SLICE_TWICE.title": "Slice Twice",
   "ADMIRAL-EXPEDITION.description": "Draw {Cards:diff()} {Cards:plural:card|cards}.\\nAdd 1 [gold]Explored Treasure[/gold] to your [gold]Hand[/gold].",
   "ADMIRAL-EXPEDITION.title": "Expedition",
-  "ADMIRAL-DESPERATE_STRIKE.description": "Deal {Damage:diff()} damage for each [gold]Scurvy[/gold] you created this combat.{InCombat:\\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
-  "ADMIRAL-DESPERATE_STRIKE.title": "Desperate Strike",
   "ADMIRAL-BIGGER_ROUNDS.description": "Your [gold]Cannon Fire[/gold] deals {BiggerRoundsPower:diff()} extra damage.",
   "ADMIRAL-BIGGER_ROUNDS.title": "Bigger Rounds",
   "ADMIRAL-BOARD_SHIP.description": "Deal {Damage:diff()} damage.\\nAdd 1 [gold]Plundered Treasure[/gold] to your [gold]Hand[/gold].",
@@ -112,6 +110,8 @@
   "ADMIRAL-UNLOAD.title": "Unload",
   "ADMIRAL-ENDLESS_BARRAGE.description": "At the start of your turn, [gold]Load[/gold] 1.",
   "ADMIRAL-ENDLESS_BARRAGE.title": "Endless Barrage",
+  "ADMIRAL-DESPERATE_STRIKE.description": "Deal {Damage:diff()} damage for each [gold]Scurvy[/gold] you created this combat.{InCombat:\\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
+  "ADMIRAL-DESPERATE_STRIKE.title": "Desperate Strike",
 
   "ADMIRAL-WET_BOOT.description": "Aw, dang it.",
   "ADMIRAL-WET_BOOT.title": "Wet Boot",
