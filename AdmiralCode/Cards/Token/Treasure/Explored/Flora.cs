@@ -16,9 +16,9 @@ namespace Admiral.AdmiralCode.Cards.Token.Treasure.Explored;
 public sealed class Flora() : AdmiralCard(1, CardType.Attack, CardRarity.Token, TargetType.AnyEnemy)
 {
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust, AdmiralKeywords.Treasure];
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(9, ValueProp.Move), new PowerVar<CustomConstrictPower>(4)];
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<CustomConstrictPower>()];
-    protected override void OnUpgrade() => DynamicVars["CustomConstrictPower"].UpgradeValueBy(5M);
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(9, ValueProp.Move), new PowerVar<EntangledPower>(6)];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<EntangledPower>()];
+    protected override void OnUpgrade() => DynamicVars["EntangledPower"].UpgradeValueBy(5M);
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         ArgumentNullException.ThrowIfNull(cardPlay.Target);
@@ -27,7 +27,7 @@ public sealed class Flora() : AdmiralCard(1, CardType.Attack, CardRarity.Token, 
             .Targeting(cardPlay.Target)
             .WithHitFx(VfxCmd.slashPath)
             .Execute(choiceContext);
-        await PowerCmd.Apply<CustomConstrictPower>(choiceContext, cardPlay.Target, this.DynamicVars["CustomConstrictPower"].BaseValue, this.Owner.Creature, (CardModel) this);
+        await PowerCmd.Apply<EntangledPower>(choiceContext, cardPlay.Target, this.DynamicVars["EntangledPower"].BaseValue, this.Owner.Creature, (CardModel) this);
     }
     
 }

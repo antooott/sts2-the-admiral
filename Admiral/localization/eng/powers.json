@@ -53,7 +53,7 @@
   "ADMIRAL-MOMENTUM_POWER.description": "Whenever you gain [gold]Vigor[/gold], draw 1 card.",
   "ADMIRAL-MOMENTUM_POWER.smartDescription": "Whenever you gain [gold]Vigor[/gold], draw {Amount:abs()} {Amount:plural:card|cards}.",
   "ADMIRAL-MOMENTUM_POWER.title": "Momentum",
-  "ADMIRAL-CUSTOM_CONSTRICT_POWER.description": "While the applier is alive, at the end of your turn, take [blue]1[/blue] damage.",
-  "ADMIRAL-CUSTOM_CONSTRICT_POWER.smartDescription": "While the applier is alive, at the end of your turn, take [blue]{Amount}[/blue] damage.",
-  "ADMIRAL-CUSTOM_CONSTRICT_POWER.title": "Constrict"
+  "ADMIRAL-ENTANGLED_POWER.description": "The creature takes 1 damage when it attacks.\\nAt the end of its turn, reduce [gold]Entangled[/gold] by 1 if it did not attack.",
+  "ADMIRAL-ENTANGLED_POWER.smartDescription": "Takes {Amount:abs()} damage when it attacks.\\nAt the end of its turn, reduce [gold]Entangled[/gold] by 1 if it did not attack.",
+  "ADMIRAL-ENTANGLED_POWER.title": "Entangled"
 }
