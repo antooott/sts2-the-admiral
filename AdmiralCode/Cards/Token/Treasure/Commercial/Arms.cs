@@ -21,7 +21,7 @@ public sealed class Arms() : AdmiralCard(-1, CardType.Skill, CardRarity.Token, T
             ++count;
         for (int i = 0; i < count; ++i)
         {
-            CardModel? card = PileType.Draw.GetPile(this.Owner).Cards.Where<CardModel>((Func<CardModel, bool>) (c => !c.Keywords.Contains(CardKeyword.Unplayable) && c.Type == CardType.Attack)).ToList<CardModel>().StableShuffle<CardModel>(this.Owner.RunState.Rng.CombatCardSelection).FirstOrDefault<CardModel>() ?? PileType.Draw.GetPile(this.Owner).Cards.ToList<CardModel>().StableShuffle<CardModel>(this.Owner.RunState.Rng.CombatCardSelection).FirstOrDefault<CardModel>();
+            CardModel? card = PileType.Draw.GetPile(this.Owner).Cards.Where<CardModel>((Func<CardModel, bool>) (c => !c.Keywords.Contains(CardKeyword.Unplayable) && c.Type == CardType.Attack)).ToList<CardModel>().StableShuffle<CardModel>(this.Owner.RunState.Rng.CombatCardSelection).FirstOrDefault<CardModel>() ?? PileType.Draw.GetPile(this.Owner).Cards.Where<CardModel>((Func<CardModel, bool>) (c => c.Type == CardType.Attack)).ToList<CardModel>().StableShuffle<CardModel>(this.Owner.RunState.Rng.CombatCardSelection).FirstOrDefault<CardModel>();
             if (card != null)
                 await CardCmd.AutoPlay(choiceContext, card, null);
         }
