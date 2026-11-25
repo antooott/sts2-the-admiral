@@ -10,7 +10,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace Admiral.AdmiralCode.Cards.Uncommon.Attack;
 
-public class Stacked() : AdmiralCard(2, CardType.Skill, CardRarity.Uncommon, TargetType.AnyEnemy)
+public class Stacked() : AdmiralCard(2, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
 {
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromKeyword(AdmiralKeywords.Treasure), HoverTipFactory.FromKeyword(AdmiralKeywords.Catch)];
     protected override IEnumerable<DynamicVar> CanonicalVars =>
