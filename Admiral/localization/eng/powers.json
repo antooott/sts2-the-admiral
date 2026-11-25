@@ -53,7 +53,7 @@
   "ADMIRAL-MOMENTUM_POWER.description": "Whenever you gain [gold]Vigor[/gold], draw 1 card.",
   "ADMIRAL-MOMENTUM_POWER.smartDescription": "Whenever you gain [gold]Vigor[/gold], draw {Amount:abs()} {Amount:plural:card|cards}.",
   "ADMIRAL-MOMENTUM_POWER.title": "Momentum",
-  "ADMIRAL-ENTANGLED_POWER.description": "The creature takes 1 damage when it attacks.\\nAt the end of its turn, reduce [gold]Entangled[/gold] by 1 if it did not attack.",
-  "ADMIRAL-ENTANGLED_POWER.smartDescription": "Takes {Amount:abs()} damage when it attacks.\\nAt the end of its turn, reduce [gold]Entangled[/gold] by 1 if it did not attack.",
+  "ADMIRAL-ENTANGLED_POWER.description": "The creature takes 1 damage when it attacks. At the end of its turn, reduce [gold]Entangled[/gold] by 1 if it did not attack.",
+  "ADMIRAL-ENTANGLED_POWER.smartDescription": "Takes {Amount:abs()} damage when it attacks. At the end of its turn, reduce [gold]Entangled[/gold] by 1 if it did not attack.",
   "ADMIRAL-ENTANGLED_POWER.title": "Entangled"
 }
