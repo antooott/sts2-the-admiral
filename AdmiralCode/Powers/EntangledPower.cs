@@ -19,12 +19,16 @@ public sealed class EntangledPower : AdmiralPower
 
     public override async Task BeforeAttack(AttackCommand command)
     {
+        if (command.Attacker != this.Owner)
+            return;
+        this.Flash();
         await CreatureCmd.Damage((PlayerChoiceContext) new ThrowingPlayerChoiceContext(), this.Owner, (Decimal) this.Amount, ValueProp.Unblockable | ValueProp.Unpowered, null, null);
         _hasAttacked = true;
     }
-
     public override async Task AfterSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
     {
+        if (!participants.Contains<Creature>(this.Owner))
+            return;
         if (_hasAttacked)
         {
             _hasAttacked = false;
