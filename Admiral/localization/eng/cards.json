@@ -134,7 +134,7 @@
   "ADMIRAL-GIANT_SQUID.title": "Giant Squid",
   "ADMIRAL-SHORTCUT.description": "Draw {Cards:diff()} {Cards:plural:card|cards}.",
   "ADMIRAL-SHORTCUT.title": "Shortcut",
-  "ADMIRAL-FLORA.description": "Deal {Damage:diff()} damage.\\nApply {EntanglePower:diff()} [gold]Entangled[/gold].",
+  "ADMIRAL-FLORA.description": "Deal {Damage:diff()} damage.\\nApply {EntangledPower:diff()} [gold]Entangled[/gold].",
   "ADMIRAL-FLORA.title": "Flora",
   "ADMIRAL-BORROWED_POWDER.description": "[gold]Load[/gold] {Load:diff()}.",
   "ADMIRAL-BORROWED_POWDER.title": "\"Borrowed\" Powder",
