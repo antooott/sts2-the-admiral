@@ -1,4 +1,5 @@
 using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Commands.Builders;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Powers;
@@ -34,10 +35,16 @@ public class DragUnderPower : AdmiralPower
         Creature target,
         CardModel? cardSource)
     {
-        if (dealer == null || dealer != this.Owner && dealer.PetOwner?.Creature != this.Owner ||
+        if (dealer == null || cardSource == null|| dealer != this.Owner && dealer.PetOwner?.Creature != this.Owner ||
             !props.IsPoweredAttack() || result.TotalDamage <= 0)
             return;
         await PowerCmd.Apply<DoomPower>(choiceContext, target, (Decimal) (result.TotalDamage), this.Owner, null);
+    }
+
+    public override async Task AfterAttack(PlayerChoiceContext choiceContext, AttackCommand command)
+    {
+        if (command.Attacker != this.Owner)
+            return;
         await PowerCmd.Remove((PowerModel)this);
     }
 }
