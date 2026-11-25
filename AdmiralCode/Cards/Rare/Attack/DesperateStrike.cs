@@ -19,7 +19,7 @@ public sealed class DesperateStrike() : AdmiralCard(1, CardType.Attack, CardRari
         new DamageVar(8, ValueProp.Move),
         new CalculationBaseVar(0M),
         new CalculationExtraVar(1M),
-        new CalculatedHitCountVar("CalculatedHits").WithMultiplier((Func<CardModel, Creature?, Decimal>) ((card, _) => (Decimal) CombatManager.Instance.History.Entries.OfType<CardGeneratedEntry>().Count<CardGeneratedEntry>((Func<CardGeneratedEntry, bool>) (c => c.Creator == card.Owner && c.Card.Title == "Scurvy" && c.Card.Rarity == CardRarity.Status)))) 
+        new CalculatedHitCountVar("CalculatedHits").WithMultiplier((Func<CardModel, Creature?, Decimal>) ((card, _) => (Decimal) PileType.Draw.GetPile(card.Owner).Cards.Count<CardModel>((Func<CardModel, bool>) (c => c.Title == "Scurvy" && c.Rarity == CardRarity.Status)) + (Decimal) PileType.Discard.GetPile(card.Owner).Cards.Count<CardModel>((Func<CardModel, bool>) (c => c.Title == "Scurvy" && c.Rarity == CardRarity.Status)) + (Decimal) PileType.Hand.GetPile(card.Owner).Cards.Count<CardModel>((Func<CardModel, bool>) (c => c.Title == "Scurvy" && c.Rarity == CardRarity.Status)))) 
     ];
     protected override void OnUpgrade() => this.DynamicVars.Damage.UpgradeValueBy(3);
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromCard<Scurvy>()];
