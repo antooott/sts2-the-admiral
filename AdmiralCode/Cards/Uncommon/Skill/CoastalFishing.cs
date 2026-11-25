@@ -1,5 +1,6 @@
 using Admiral.AdmiralCode.Keywords;
 using Admiral.AdmiralCode.Powers;
+using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Extensions;
@@ -22,8 +23,12 @@ public sealed class CoastalFishing() : AdmiralCard(1, CardType.Skill, CardRarity
     private readonly List<string> _catchPool = ["Jellyfish", "Seabass", "Lemon Grove"];
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        int count = Math.Max(0, Math.Min(this.DynamicVars.Cards.IntValue, CardPile.MaxCardsInHand - PileType.Hand.GetPile(this.Owner).Cards.Count));
-        await CardPileCmd.Add((IEnumerable<CardModel>) PileType.Discard.GetPile(this.Owner).Cards.TakeRandom<CardModel>(count, this.Owner.RunState.Rng.CombatCardSelection).ToList<CardModel>(), PileType.Hand);
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
+        int selectCount = Math.Min(this.DynamicVars.Cards.IntValue, CardPile.MaxCardsInHand - PileType.Hand.GetPile(this.Owner).Cards.Count);
+        if (selectCount <= 0)
+            return;
+        await CardPileCmd.Add(await CardSelectCmd.FromCombatPile(choiceContext, PileType.Discard.GetPile(this.Owner), this.Owner, new CardSelectorPrefs(this.SelectionScreenPrompt, selectCount)), PileType.Hand);
+        
         if (this.HasBetterBait)
         {
             foreach (var catchCard in this._catchPool)
