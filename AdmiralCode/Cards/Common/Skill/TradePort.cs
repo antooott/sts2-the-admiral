@@ -18,17 +18,16 @@ public sealed class TradePort() : AdmiralCard(1, CardType.Skill, CardRarity.Comm
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         CardModel? exhaustTarget = (await CardSelectCmd.FromHand(choiceContext, this.Owner, new CardSelectorPrefs(CardSelectorPrefs.ExhaustSelectionPrompt, 1), null, (AbstractModel) this)).FirstOrDefault<CardModel>();
-        if (exhaustTarget != null)
+        if (exhaustTarget == null)
+            return;
+        int count = exhaustTarget.EnergyCost.GetWithModifiers(CostModifiers.All);
+        await CardCmd.Exhaust(choiceContext, exhaustTarget);
+        for (; count > 0; --count)
         {
-            int count = exhaustTarget.EnergyCost.GetWithModifiers(CostModifiers.All);
-            await CardCmd.Exhaust(choiceContext, exhaustTarget);
-            for (; count > 0; --count)
-            {
-                CardModel? treasure = CardFactory.GetDistinctForCombat(this.Owner, ModelDb.CardPool<TokenCardPool>().GetUnlockedCards(this.Owner.UnlockState, this.Owner.RunState.CardMultiplayerConstraint).Where<CardModel>((Func<CardModel, bool>) (c => _treasurePool.Contains(c.Title))), 1, this.Owner.RunState.Rng.CombatCardGeneration).FirstOrDefault<CardModel>();
-                if (treasure == null)
-                    return;
-                await CardPileCmd.AddGeneratedCardToCombat(treasure, PileType.Hand, this.Owner);
-            }
+            CardModel? treasure = CardFactory.GetDistinctForCombat(this.Owner, ModelDb.CardPool<TokenCardPool>().GetUnlockedCards(this.Owner.UnlockState, this.Owner.RunState.CardMultiplayerConstraint).Where<CardModel>((Func<CardModel, bool>) (c => _treasurePool.Contains(c.Title))), 1, this.Owner.RunState.Rng.CombatCardGeneration).FirstOrDefault<CardModel>();
+            if (treasure == null)
+                return;
+            await CardPileCmd.AddGeneratedCardToCombat(treasure, PileType.Hand, this.Owner);
         }
     }
 }
