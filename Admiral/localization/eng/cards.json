@@ -115,8 +115,7 @@
   "ADMIRAL-ENDLESS_BARRAGE.title": "Endless Barrage",
   "ADMIRAL-DESPERATE_STRIKE.description": "Deal {Damage:diff()} damage for each [gold]Scurvy[/gold] in your [gold]Hand[/gold], [gold]Draw[/gold] and [gold]Discard Piles[/gold].{InCombat:\\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
   "ADMIRAL-DESPERATE_STRIKE.title": "Desperate Strike",
-  "ADMIRAL-SIFT.description": "Draw {Cards:diff()} cards.\\nAdd [gold]Exhaust[/gold] to a card in your [gold]Hand[/gold].\\n[gold]Prosper:[/gold] Gain {energyPrefix:energyIcons(2)}.",
-  "ADMIRAL-SIFT.selectionScreenPrompt": "Select a card to add [gold]Exhaust[/gold] to.",
+  "ADMIRAL-SIFT.description": "Draw {Cards:diff()} cards. [gold]Exhaust[/gold] a card in your [gold]Hand[/gold].\\n[gold]Prosper:[/gold] Gain {energyPrefix:energyIcons(2)}.",
   "ADMIRAL-SIFT.title": "Sift",
 
   "ADMIRAL-WET_BOOT.description": "Aw, dang it.",

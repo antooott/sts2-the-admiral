@@ -23,10 +23,9 @@ public class Sift() : AdmiralCard(0, CardType.Skill, CardRarity.Rare, TargetType
     {
         await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
         await CardPileCmd.Draw(choiceContext, this.DynamicVars.Cards.BaseValue, this.Owner);
-        CardSelectorPrefs prefs = new CardSelectorPrefs(this.SelectionScreenPrompt, 1);
-        CardModel? card = (await CardSelectCmd.FromHand(choiceContext, this.Owner, prefs, (Func<CardModel, bool>) (c => !c.Keywords.Contains(CardKeyword.Exhaust) && !c.Keywords.Contains(CardKeyword.Unplayable)), (AbstractModel) this)).FirstOrDefault<CardModel>();
-        if (card != null)
-            CardCmd.ApplyKeyword(card, CardKeyword.Exhaust);
+        CardModel? exhaustTarget = (await CardSelectCmd.FromHand(choiceContext, this.Owner, new CardSelectorPrefs(CardSelectorPrefs.ExhaustSelectionPrompt, 1), null, (AbstractModel) this)).FirstOrDefault<CardModel>();
+        if (exhaustTarget != null)
+            await CardCmd.Exhaust(choiceContext, exhaustTarget);
         if (HasPlayedTreasureThisCombat)
             await PlayerCmd.GainEnergy(this.DynamicVars.Energy.BaseValue, this.Owner);
     }
