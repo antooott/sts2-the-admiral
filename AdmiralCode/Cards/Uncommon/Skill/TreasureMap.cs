@@ -24,9 +24,8 @@ public class TreasureMap() : AdmiralCard(1, CardType.Skill, CardRarity.Uncommon,
         await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
         IEnumerable<CardModel> cardOptions = PileType.Draw.GetPile(this.Owner).Cards.ToList<CardModel>().StableShuffle<CardModel>(this.Owner.RunState.Rng.CombatCardSelection).Take<CardModel>(this.DynamicVars.Cards.IntValue);
         CardModel? card = (await CardSelectCmd.FromCombatPile(choiceContext, PileType.Draw.GetPile(this.Owner), this.Owner, new CardSelectorPrefs(this.SelectionScreenPrompt, 1), (Func<CardModel, bool>) (c => cardOptions.Contains<CardModel>(c)))).FirstOrDefault<CardModel>();
-        if (card == null)
-            return;
-        await CardPileCmd.Add(card, PileType.Hand);
+        if (card != null)
+            await CardPileCmd.Add(card, PileType.Hand);
         Decimal count = this.DynamicVars["TreasureVar"].BaseValue;
         for (; count > 0; --count)
         {
