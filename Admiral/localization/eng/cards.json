@@ -43,7 +43,7 @@
   "ADMIRAL-RECOVERY.title": "Recovery",
   "ADMIRAL-FRONTLOAD.description": "Deal {Damage:diff()} damage to the leftmost enemy.\\nGain {Energy:energyIcons()}.",
   "ADMIRAL-FRONTLOAD.title": "Frontload",
-  "ADMIRAL-PROTECT_THE_LOOT.description": "Deal {Damage:diff()} damage.\\nIf you have played a [gold]Treasure[/gold] card this combat, gain {Block:diff()} [gold]Block[/gold].",
+  "ADMIRAL-PROTECT_THE_LOOT.description": "Deal {Damage:diff()} damage.\\n[gold]Prosper:[/gold] Gain {Block:diff()} [gold]Block[/gold].",
   "ADMIRAL-PROTECT_THE_LOOT.title": "Protect the Loot!",
   "ADMIRAL-TRADE_PORT.description": "[gold]Exhaust[/gold] a card.\\nAdd an amount of [gold]Commercial Treasure[/gold] equal to its cost to your Hand.",
   "ADMIRAL-TRADE_PORT.title": "Trade Port",
