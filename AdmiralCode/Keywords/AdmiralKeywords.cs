@@ -11,4 +11,7 @@ public class AdmiralKeywords
     
     [CustomEnum, KeywordProperties(AutoKeywordPosition.Before)]
     public static CardKeyword Catch;
+
+    [CustomEnum]
+    public static StaticHoverTip Prosper;
 }

@@ -1,4 +1,6 @@
 {
   "ADMIRAL-LOAD.description": "Summons your [gold]Cannon[/gold] and [gold]Loads[/gold] it with {Load:diff()} [gold]Gunpowder[/gold].",
-  "ADMIRAL-LOAD.title": "Load"
+  "ADMIRAL-LOAD.title": "Load",
+  "ADMIRAL-PROSPER.description": "Triggers an additional effect if you have played a [gold]Treasure[/gold] this combat.",
+  "ADMIRAL-PROSPER.title": "Prosper"
 }

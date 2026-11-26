@@ -15,7 +15,7 @@ public class Sift() : AdmiralCard(0, CardType.Skill, CardRarity.Rare, TargetType
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(2), new EnergyVar(2)];
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromKeyword(AdmiralKeywords.Treasure)];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.Static(AdmiralKeywords.Prosper), HoverTipFactory.FromKeyword(AdmiralKeywords.Treasure)];
     protected override void OnUpgrade() => this.DynamicVars.Cards.UpgradeValueBy(1);
     private bool HasPlayedTreasureThisCombat => CombatManager.Instance.History.Entries.OfType<CardPlayFinishedEntry>().Any(c => c.CardPlay.Player == this.Owner && c.CardPlay.Card.Keywords.Contains(AdmiralKeywords.Treasure));
     protected override bool ShouldGlowGoldInternal => HasPlayedTreasureThisCombat;
