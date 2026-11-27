@@ -23,5 +23,6 @@ public class SwordJab() : AdmiralCard(1, CardType.Attack, CardRarity.Uncommon, T
             .Targeting(cardPlay.Target)
             .WithHitFx(VfxCmd.slashPath)
             .Execute(choiceContext);
+        await CardPileCmd.Draw(choiceContext, this.DynamicVars.Cards.BaseValue, this.Owner);
     }
 }
