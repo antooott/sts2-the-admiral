@@ -98,8 +98,8 @@
   "ADMIRAL-LIGHTHOUSE.title": "Lighthouse",
   "ADMIRAL-FEINT.description": "Draw 1 card. If you draw an Attack, play it.",
   "ADMIRAL-FEINT.title": "Feint",
-  "ADMIRAL-POTENTIAL.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold] for each other card in your [gold]Hand[/gold].",
-  "ADMIRAL-POTENTIAL.title": "Potential",
+  "ADMIRAL-MUNCHIES.description": "The first time you play a [gold]Catch[/gold] each turn, gain {energyPrefix:energyIcons(1)}.",
+  "ADMIRAL-MUNCHIES.title": "Munchies",
 
   "ADMIRAL-DRAG_UNDER.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold].\\nThe next Attack you play deals {IfUpgraded:show:triple|double} damage and applies [gold]Doom[/gold] equal to damage dealt.",
   "ADMIRAL-DRAG_UNDER.title": "Drag Under",
@@ -125,6 +125,8 @@
   "ADMIRAL-DESPERATE_STRIKE.title": "Desperate Strike",
   "ADMIRAL-SIFT.description": "Draw {Cards:diff()} cards. [gold]Exhaust[/gold] a card in your [gold]Hand[/gold].\\n[gold]Prosper:[/gold] Gain {energyPrefix:energyIcons(2)}.",
   "ADMIRAL-SIFT.title": "Sift",
+  "ADMIRAL-POTENTIAL.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold] for each other card in your [gold]Hand[/gold].",
+  "ADMIRAL-POTENTIAL.title": "Potential",
 
   "ADMIRAL-WET_BOOT.description": "Aw, dang it.",
   "ADMIRAL-WET_BOOT.title": "Wet Boot",

@@ -55,5 +55,8 @@
   "ADMIRAL-MOMENTUM_POWER.title": "Momentum",
   "ADMIRAL-ENTANGLED_POWER.description": "Entangled creatures lose HP when they attack. Each turn, [gold]Entangled[/gold] is reduced by 1 if they didn't attack.",
   "ADMIRAL-ENTANGLED_POWER.smartDescription": "Loses {Amount:abs()} HP when it attacks. At the end of its turn, reduce [gold]Entangled[/gold] by 1 if it did not attack.",
-  "ADMIRAL-ENTANGLED_POWER.title": "Entangled"
+  "ADMIRAL-ENTANGLED_POWER.title": "Entangled",
+  "ADMIRAL-MUNCHIES_POWER.description": "The first time you play a [gold]Catch[/gold] each turn, gain {energyPrefix:energyIcons(1)}.",
+  "ADMIRAL-MUNCHIES_POWER.smartDescription": "The first {Amount:plural:time|[blue]{Amount:abs()}[blue] times} you play a [gold]Catch[/gold] each turn, gain {energyPrefix:energyIcons(1)}.",
+  "ADMIRAL-MUNCHIES_POWER.title": "Munchies"
 }
