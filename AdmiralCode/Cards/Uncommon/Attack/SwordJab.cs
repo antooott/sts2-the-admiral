@@ -17,7 +17,7 @@ public class SwordJab() : AdmiralCard(1, CardType.Attack, CardRarity.Uncommon, T
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         ArgumentNullException.ThrowIfNull(cardPlay.Target);
-        await DamageCmd.Attack(this.DynamicVars.CalculatedDamage)
+        await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue)
             .WithHitCount(this.DynamicVars.HitCount.IntValue)
             .FromCard(this, cardPlay)
             .Targeting(cardPlay.Target)
